@@ -1,0 +1,406 @@
+/* name: Catppuccin */
+/* author: Pocco81 (https://github.com/Pocco81) */
+/* license: MIT */
+/* upstream: https://github.com/catppuccin/github */
+/* blurb: Soothing pastel theme for the high-spirited! */
+
+:root {
+    /* Give H, S, L values */
+
+	/* rainbow 🌈 */
+    --rosewater: 10, 56%, 91%;
+    --flamingo: 0, 59%, 88%;
+    --mauve: 279, 70%, 83%;
+    --pink: 316, 72%, 86%;
+    --maroon: 349, 60%, 77%;
+    --red: 342, 79%, 75%;
+    --peach: 024, 88%, 78%;
+    --yellow: 041, 88%, 84%;
+    --green: 128, 58%, 79%;
+    --green_darken: 128, 58%, 76%;
+    --green_darkest: 128, 58%, 72%;
+    --teal: 171, 53%, 81%;
+    --blue: 207, 93%, 79%;
+    --blue_darken: 213, 84%, 78%;
+    --sky: 189, 71%, 73%;
+    --lavender: 238, 100%, 89%;
+
+	/* black & white ☯️ */
+    --black0: 251, 33%, 9%;
+    --black1: 251, 19%, 12%;
+    --black2: 240, 20%, 15%;
+    --black3: 249, 18%, 22%;
+    --black4: 254, 12%, 36%;
+    --gray0: 247, 8%, 46%;
+    --gray1: 274, 11%, 59%;
+    --gray2: 285, 10%, 75%;
+    --white: 220, 38%, 89%;
+}
+
+:root {
+    /* INTERNAL VARS */
+    --__black0: hsl(var(--black0));
+    --__black1: hsl(var(--black1));
+    --__black2: hsl(var(--black2));
+    --__black3: hsl(var(--black3));
+    --__black4: hsl(var(--black4));
+    --__gray0: hsl(var(--gray0));
+    --__gray1: hsl(var(--gray1));
+    --__gray2: hsl(var(--gray2));
+    --__white: hsl(var(--white));
+    --__red: hsl(var(--red));
+    --__yellow: hsl(var(--yellow));
+    --__peach: hsl(var(--peach));
+    --__green: hsl(var(--green));
+    --__lavender: hsl(var(--lavender));
+    --__blue: hsl(var(--blue));
+    --__pink: hsl(var(--pink));
+
+    /* MUTED VARS */
+    --__black2_muted: hsl(var(--black2), 0.4);
+    --__black1_muted: hsl(var(--black1), 0.4);
+    --__black3_muted: hsl(var(--black3), 0.4);
+    --__gray0_muted: hsl(var(--gray0), 0.4);
+    --__gray1_muted: hsl(var(--gray1), 0.4);
+    --__white_muted: hsl(var(--white), 0.4);
+    --__gray2_muted: hsl(var(--gray2), 0.4);
+    --__black4_muted: hsl(var(--black4), 0.4);
+    --__red_muted: hsl(var(--red), 0.4);
+    --__yellow_muted: hsl(var(--yellow), 0.4);
+    --__peach_muted: hsl(var(--peach), 0.4);
+    --__green_muted: hsl(var(--green), 0.4);
+    --__lavender_muted: hsl(var(--lavender), 0.4);
+    --__blue_muted: hsl(var(--blue), 0.4);
+    --__pink_muted: hsl(var(--pink), 0.4);
+
+    /* DARKEN STUFF */
+    --__green_darken: hsl(var(--green_darken));
+    --__green_darkest: hsl(var(--green_darkest));
+    --__blue_darken: hsl(var(--blue_darken));
+    
+    /* ADVANCED STUFF */
+    --color-fg-default: var(--__white) !important;
+    --color-fg-muted: var(--__gray2) !important;
+    --color-fg-subtle: var(--__gray1) !important;
+    --color-fg-on-emphasis: var(--__white) !important;
+
+    --color-canvas-default: var(--__black2) !important;
+    --color-canvas-overlay: var(--__black1) !important;
+    --color-canvas-inset: var(--__black1) !important;
+    --color-canvas-subtle: var(--__black1) !important;
+    
+    --color-border-default: var(--__black4) !important;
+    --color-border-muted: var(--__black3) !important;
+    --color-border-subtle: var(--__gray0) !important;
+
+    --color-shadow-small: 0 0 transparent !important;
+    --color-shadow-medium: 0 3px 6px var(--__black1) !important;
+    --color-shadow-large: 0 8px 24px var(--__black1) !important;
+    --color-shadow-extra-large: 0 12px 48px var(--__black1) !important;
+
+    --color-neutral-emphasis-plus: var(--__gray0) !important;
+    --color-netral-emphasis: var(--__gray0) !important;
+    --color-neutral-muted: var(--__black3) !important;
+    --color-neutral-subtle: var(--__black1) !important;
+
+    --color-accent-fg: var(--__blue) !important;
+    --color-accent-emphasis: var(--__blue_darken) !important;
+    --color-accent-muted: var(--__blue_muted) !important;
+    --color-accent-subtle: var(--__blue_muted) !important;
+
+    --color-success-fg: var(--__green) !important;
+    --color-success-emphasis: var(--__green_darken) !important;
+    --color-success-muted: var(--__green_muted) !important;
+    --color-success-subtle: var(--__green_muted) !important;
+    
+    --color-attention-fg: var(--__yellow) !important;
+    --color-attention-emphasis: var(--__yellow_darken) !important;
+    --color-attention-muted: var(--__yellow_muted) !important;
+    --color-attention-subtle: var(--__yellow_muted) !important;
+    
+    --color-severe-fg: var(--__peach) !important;
+    --color-severe-emphasis: var(--__peach) !important;
+    --color-severe-muted: var(--__peach_muted) !important;
+    --color-severe-subtle: var(--__peach_muted) !important;
+
+    --color-danger-fg: var(--__red) !important;
+    --color-danger-emphasis: var(--__red) !important;
+    --color-danger-muted: var(--__red_muted) !important;
+    --color-danger-subtle: var(--__red_muted) !important;
+    
+    --color-done-fg: var(--__pink) !important;
+    --color-done-emphasis: var(--__pink) !important;
+    --color-done-muted: var(--__pink_muted) !important;
+    --color-done-subtle: var(--__pink_muted) !important;
+    
+    --color-sponsors-fg: var(--__pink) !important;
+    --color-sponsors-emphasis: var(--__pink) !important;
+    --color-sponsors-muted: var(--__pink_muted) !important;
+    --color-sponsors-subtle: var(--__pink_muted) !important;
+    
+    --color-primer-border-active: var(--__peach) !important;
+    --color-sidenav-selected-bg: var(--__black1) !important;
+    
+    --color-state-hover-primary-bg: var(--__blue_darken) !important;
+    --color-state-hover-primary-border: var(--__blue) !important;
+    
+    /* BUTTONS */   
+    --color-btn-text: var(--__white) !important;
+    --color-btn-bg: var(--__black1) !important;
+    --color-btn-border: var(--color-border-subtle) !important;
+    --color-btn-hover-bg: var(--__black1) !important;
+    --color-btn-hover-border: var(--color-border-default) !important;
+    --color-btn-active-bg: var(--__black1) !important;
+    --color-btn-active-border: var(--color-btn-hover-border) !important;
+    --color-btn-selected-bg: var(--__black1) !important;
+    --color-btn-focus-bg: var(--__black1) !important;
+    --color-btn-primary-text: var(--__black2) !important;
+    --color-btn-primary-bg: var(--__green_darkest) !important;
+    --color-btn-primary-hover-bg: var(--__green_darken) !important;
+    --color-btn-primary-selected-bg: var(--__green_darken) !important;
+    --color-btn-primary-focus-bg: var(--__green_muted) !important;
+    --color-btn-primary-icon: var(--__black2) !important;
+    --color-btn-primary-disabled-bg: var(--__green_muted) !important;
+    --color-btn-primary-disabled-text: var(--__gray2) !important;
+    --color-btn-outline-text: var(--__blue) !important;
+    --color-btn-outline-hover-text: var(--__blue) !important;
+    --color-btn-outline-hover-bg: var(--__black1) !important;
+    --color-btn-outline-selected-text: var(--__white) !important;
+    --color-btn-outline-selected-bg: var(--__blue_darken) !important;
+    --color-btn-outline-disabled-bg: var(--__black1) !important;
+    --color-btn-danger-text: var(--__red) !important;
+    --color-btn-danger-hover-text: var(--__white) !important;
+    --color-btn-danger-hover-bg: var(--__red) !important;
+    --color-btn-danger-hover-border: var(--__red) !important;
+    --color-btn-danger-hover-icon: var(--__white) !important;
+    --color-btn-danger-selected-text: var(--__white) !important;
+    --color-btn-danger-selected-bg: var(--__red) !important;
+    --color-btn-danger-selected-border: var(--__peach) !important;
+    --color-btn-danger-disabled-bg: var(--__black2) !important;
+    --color-btn-danger-focus-border: var(--__red) !important;
+    --color-btn-danger-icon: var(--__red) !important;
+
+    /* ANSI */
+    --color-ansi-red: var(--__red) !important;
+    --color-ansi-red-bright: var(--__red) !important;
+    --color-ansi-green: var(--__green) !important;
+    --color-ansi-green-bright: var(--__green) !important;
+    --color-ansi-yellow: var(--__yellow) !important;
+    --color-ansi-yellow-bright: var(--__yellow) !important;
+    --color-ansi-lavender: var(--__blue) !important;
+    --color-ansi-lavender-bright: var(--__blue) !important;
+    --color-ansi-magenta: var(--__pink) !important;
+    --color-ansi-magenta-bright: var(--__pink) !important;
+    --color-ansi-cyan: var(--__lavender) !important;
+    --color-ansi-cyan-bright: var(--__lavender) !important;
+    
+    /* WORKFLOWS */
+	--color-workflow-card-bg: var(--__black1) !important;	
+	--color-workflow-card-hover-bg: var(--__black1) !important;
+	--color-workflow-card-hover-bg: var(--__black3) !important;
+	--color-workflow-card-focus-bg: var(--__black1) !important;
+	--color-workflow-card-focus-bg: var(--__black3) !important;
+	--color-workflow-card-border: var(--__black3) !important;
+
+	--color-checks-bg: var(--__black1) !important;    
+    --color-checks-text-primary: var(--__white) !important;
+    --color-checks-text-secondary: var(--__gray0) !important;
+    --color-checks-text-link: var(--__blue) !important;
+    --color-checks-btn-icon: var(--__white) !important;
+    --color-checks-btn-hover-icon: var(--__gray0) !important;
+    --color-checks-input-text: var(--__gray0) !important;
+    --color-checks-input-placeholder-text: var(--__gray1) !important;
+    --color-checks-input-focus-text: var(--__white) !important;
+    --color-checks-input-bg: var(--__black1) !important;
+    --color-checks-donut-error: var(--__red) !important;
+    --color-checks-donut-pending: var(--__yellow) !important;
+    --color-checks-donut-success: var(--__green) !important;
+    --color-checks-donut-neutral: var(--__gray0) !important;
+    --color-checks-dropdown-text: var(--__white) !important;
+    --color-checks-dropdown-bg: var(--__black1) !important;
+    --color-checks-dropdown-border: var(--__black1) !important;
+    --color-checks-dropdown-hover-text: var(--__white) !important;
+    --color-checks-dropdown-btn-hover-text: var(--__white) !important;
+    --color-checks-header-label-text: var(--__gray0) !important;
+    --color-checks-header-label-open-text: var(--__white) !important;
+    --color-checks-header-border: var(--__black1) !important;
+    --color-checks-header-icon: var(--__white) !important;
+    --color-checks-line-text: var(--__white) !important;
+    --color-checks-line-num-text: var(--__gray0) !important;
+    --color-checks-line-timestamp-text: var(--__gray0) !important;
+    --color-checks-line-selected-num-text: var(--__blue) !important;
+    --color-checks-line-dt-fm-text: var(--__white) !important;
+    --color-checks-line-dt-fm-bg: var(--__peach) !important;
+    --color-checks-gate-text: var(--__gray0) !important;
+    --color-checks-gate-waiting-text: var(--__yellow) !important;
+    --color-checks-step-header-open-bg: var(--__black1) !important;
+    --color-checks-step-error-text: var(--__red) !important;
+    --color-checks-step-warning-text: var(--__yellow) !important;
+    --color-checks-logline-text: var(--__white) !important;
+    --color-checks-logline-num-text:var(--__gray0) !important;
+    --color-checks-logline-debug-text: var(--__pink) !important;
+    --color-checks-logline-error-text: var(--__white) !important;
+    --color-checks-logline-error-num-text: var(--__gray0) !important;
+    --color-checks-logline-warning-text: var(--__white) !important;
+    --color-checks-logline-warning-num-text: var(--__yellow) !important;
+    --color-checks-logline-command-text: var(--__blue) !important;
+    --color-checks-logline-section-text: var(--__green) !important;
+    --color-checks-ansi-black: var(--color-ansi-black) !important;
+    --color-checks-ansi-black-bright: var(--color-ansi-black-bright) !important;
+    --color-checks-ansi-white: var(--color-ansi-white) !important;
+    --color-checks-ansi-white-bright: var(--color-ansi-white-bright) !important;
+    --color-checks-ansi-gray: var(--color-ansi-gray) !important;
+    --color-checks-ansi-red: var(--color-ansi-red) !important;
+    --color-checks-ansi-red-bright: var(--color-ansi-red-bright) !important;
+    --color-checks-ansi-green: var(--color-ansi-green) !important;
+    --color-checks-ansi-green-bright: var(--color-ansi-green-bright) !important;
+    --color-checks-ansi-yellow: var(--color-ansi-yellow) !important;
+    --color-checks-ansi-yellow-bright: var(--color-ansi-yellow-bright) !important;
+    --color-checks-ansi-lavender: var(--color-ansi-lavender) !important;
+    --color-checks-ansi-lavender-bright: var(--color-ansi-lavender-bright) !important;
+    --color-checks-ansi-magenta: var(--color-ansi-magenta) !important;
+    --color-checks-ansi-magenta-bright: var(--color-ansi-magenta-bright) !important;
+    --color-checks-ansi-cyan: var(--color-ansi-cyan) !important;
+    --color-checks-ansi-cyan-bright: var(--color-ansi-cyan-bright) !important;
+
+    /* CONTRIBUTION GRAPH */
+    --color-calendar-halloween-graph-day-L2-bg: var(--__red) !important;
+    --color-calendar-halloween-graph-day-L3-bg: var(--__peach) !important;
+    --color-calendar-halloween-graph-day-L4-bg:var(--__yellow) !important;
+    --color-calendar-graph-day-bg: var(--__black1) !important;
+    --color-calendar-graph-day-L1-bg: var(--__green_darken) !important;
+    --color-calendar-graph-day-L2-bg: var(--__green_darken) !important;
+    --color-calendar-graph-day-L3-bg: var(--__green) !important;
+    --color-calendar-graph-day-L4-bg: var(--__green) !important;
+    --color-user-mention-fg: var(--__white) !important;
+    --color-user-mention-bg: var(--__yellow) !important;
+
+    /* HEADER */
+	--color-header-bg: var(--__black1) !important;	
+    --color-page-header-bg: var(--__black1) !important;	
+	--color-header-border: var(--__black3) !important;
+	--color-header-text: var(--__white) !important;
+	--color-header-search-bg: var(--__black1) !important;
+
+    /* MARKETING */
+    --color-marketing-icon-primary: var(--__green) !important;
+    --color-marketing-icon-secondary: var(--__blue_darken) !important;
+    
+    /* SEARCH KEYWORD */
+    --color-search-keyword-hl: var(--__yellow_muted) !important;
+
+    /* DIFFS */
+    --color-diff-blob-addition-num-text: var(--__white) !important;
+    --color-diff-blob-addition-fg: var(--__white) !important;
+    --color-diff-blob-addition-num-bg: var(--__green_muted) !important;
+    --color-diff-blob-addition-line-bg: var(--__green_muted) !important;
+    --color-diff-blob-addition-word-bg: var(--__green_muted) !important;
+    --color-diff-blob-deletion-num-text: var(--__white) !important;
+    --color-diff-blob-deletion-fg: var(--__white) !important;
+    --color-diff-blob-deletion-num-bg: var(--__red_muted) !important;
+    --color-diff-blob-deletion-line-bg: var(--__red_muted) !important;
+    --color-diff-blob-deletion-word-bg: var(--__red_muted) !important;
+    --color-diff-blob-hunk-num-bg: var(--__blue_muted) !important;
+    --color-diff-blob-expander-icon: var(--__gray0) !important;
+    --color-diffstat-deletion-border: var(--__red_muted) !important;
+    --color-diffstat-addition-border: var(--__green_muted) !important;
+    --color-diffstat-addition-bg: var(--__green) !important;
+
+    /* PRETTYLIGHTS CODE SYNTAX HIGHLIGHTING */
+    --color-prettylights-syntax-comment: var(--__gray0) !important;
+    --color-prettylights-syntax-constant: var(--__blue) !important;
+    --color-prettylights-syntax-entity: var(--__blue) !important;
+    --color-prettylights-syntax-storage-modifier-import: var(--__white) !important;
+    --color-prettylights-syntax-entity-tag: var(--__green) !important;
+    --color-prettylights-syntax-keyword: var(--__red) !important;
+    --color-prettylights-syntax-string: var(--__green) !important;
+    --color-prettylights-syntax-variable: var(--__yellow) !important;
+    --color-prettylights-syntax-brackethighlighter-unmatched: var(--__peach) !important;
+    --color-prettylights-syntax-invalid-illegal-text: var(--__white) !important;
+    --color-prettylights-syntax-invalid-illegal-bg: var(--__red) !important;
+    --color-prettylights-syntax-carriage-return-text: var(--__white) !important;
+    --color-prettylights-syntax-carriage-return-bg: var(--__red) !important;
+    --color-prettylights-syntax-string-regexp: var(--__green) !important;
+    --color-prettylights-syntax-markup-list: var(--__yellow) !important;
+    --color-prettylights-syntax-markup-heading: var(--__blue) !important;
+    --color-prettylights-syntax-markup-italic: var(--__white) !important;
+    --color-prettylights-syntax-markup-bold: var(--__white) !important;
+    --color-prettylights-syntax-markup-deleted-text: var(--__white) !important;
+    --color-prettylights-syntax-markup-deleted-bg: var(--__red) !important;
+    --color-prettylights-syntax-markup-inserted-text: var(--__green) !important;
+    --color-prettylights-syntax-markup-inserted-bg: var(--__green_darken) !important;
+    --color-prettylights-syntax-markup-changed-text: var(--__white) !important;
+    --color-prettylights-syntax-markup-changed-bg: var(--__red) !important;
+    --color-prettylights-syntax-markup-ignored-text: var(--__white) !important;
+    --color-prettylights-syntax-markup-ignored-bg: var(--__blue) !important;
+    --color-prettylights-syntax-meta-diff-range: var(--__pink) !important;
+    --color-prettylights-syntax-brackethighlighter-angle: var(--__gray0) !important;
+    --color-prettylights-syntax-sublimelinter-gutter-mark: var(--__gray1) !important;
+    --color-prettylights-syntax-constant-other-reference-link: var(--__green) !important;
+
+    /* CODE MIRROR */
+    --color-codemirror-text: var(--__white) !important;
+    --color-codemirror-bg: var(--__black2) !important;
+    --color-codemirror-gutters-bg: var(--__black1) !important;
+    --color-codemirror-guttermarker-text: var(--__gray1) !important;
+    --color-codemirror-guttermarker-subtle-text: var(--__gray0) !important;
+    --color-codemirror-linenumber-text: var(--__gray1) !important;
+    --color-codemirror-cursor: var(--__black3) !important;
+    --color-codemirror-selection-bg: var(--__blue_muted) !important;
+    --color-codemirror-activeline-bg: var(--__black3) !important;
+    --color-codemirror-matchingbracket-text: var(--__white) !important;
+    --color-codemirror-lines-bg: var(--__black2) !important;
+    --color-codemirror-syntax-comment: var(--__gray0) !important;
+    --color-codemirror-syntax-constant: var(--__blue) !important;
+    --color-codemirror-syntax-entity: var(--__pink) !important;
+    --color-codemirror-syntax-keyword: var(--__red) !important;
+    --color-codemirror-syntax-storage: var(--__red) !important;
+    --color-codemirror-syntax-string: var(--__green) !important;
+    --color-codemirror-syntax-support: var(--__black3) !important;
+    --color-codemirror-syntax-variable: var(--__yellow) !important;
+
+    /* SOCIAL */
+    --color-social-reaction-border: var(--__blue) !important;
+    --color-social-reaction-bg: var(--__black1) !important;
+    --color-social-reaction-bg-hover: var(--__black1) !important;
+    --color-social-reaction-bg-reacted-hover: var(--__blue_darken) !important;
+
+    /* MISC */
+    --color-avatar-bg: var(--__black4) !important;
+    --color-avatar-border: var(--__black4) !important;
+    --color-avatar-stack-fade: var(--__gray1) !important;
+    --color-avatar-stack-fade-more: var(--__black1) !important;
+    --color-avatar-child-shadow: -2px -2px 0 var(--__black2) !important;
+    --color-underlinenav-icon: var(--__gray1) !important;
+    --color-underlinenav-border-hover: var(--__gray1) !important;
+
+    /* NOTIFICATIONS */
+    --color-notifications-button-text: var(--__white) !important;
+    --color-notifications-button-hover-text: var(--__white) !important;
+    --color-notifications-button-hover-bg: var(--__blue_darken) !important;
+
+    /* MARKDOWN ig */
+    --color-mktg-success: var(--__green) !important;
+    --color-mktg-info: var(--__blue_darken) !important;
+    --color-mktg-btn-bg-top: var(--__blue) !important;
+    --color-mktg-btn-bg-bottom: var(--__blue) !important;
+    --color-mktg-btn-bg-overlay-top: var(--__blue) !important;
+    --color-mktg-btn-bg-overlay-bottom:var(--__blue_darken) !important;
+    --color-mktg-btn-text: var(--__white) !important;
+    --color-mktg-btn-primary-bg-top: var(--__green_darken) !important;
+    --color-mktg-btn-primary-bg-bottom: var(--__green_darken) !important;
+    --color-mktg-btn-primary-bg-overlay-top: var(--__green_darken) !important;
+    --color-mktg-btn-primary-bg-overlay-bottom: var(--__green_darken) !important;
+    --color-mktg-btn-primary-text: var(--__white) !important;
+    --color-mktg-btn-enterprise-bg-top: var(--__pink) !important;
+    --color-mktg-btn-enterprise-bg-bottom: var(--__pink) !important;
+    --color-mktg-btn-enterprise-bg-overlay-top: var(--__pink) !important;
+    --color-mktg-btn-enterprise-bg-overlay-bottom: var(--__pink) !important;
+    --color-mktg-btn-enterprise-text: var(--__white) !important;
+    --color-mktg-btn-outline-text: var(--__white) !important;
+    --color-mktg-btn-outline-hover-text: var(--__white) !important;
+    --color-mktg-btn-outline-focus-border: var(--__white) !important;
+    --color-mktg-btn-dark-text: var(--__white) !important;
+    --color-mktg-btn-dark-hover-text: var(--__white) !important;
+    --color-mktg-btn-dark-focus-border: var(--__white) !important;
+}
