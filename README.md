@@ -17,7 +17,7 @@
 
 ## Usage
 
-1. Install an extension called `Redefined GitHub`
+1. Install an extension called [Refined GitHub](https://github.com/refined-github/refined-github)
 2. Right Click on the extension
 3. Go to options/preferences (depends on the browser)
 4. Copy the contents of [catppuccin.css](https://github.com/catppuccin/github/blob/main/catppuccin.css) and paste them into the box below "Custom CSS"
