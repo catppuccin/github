@@ -82,7 +82,7 @@
     --color-fg-default: var(--__white) !important;
     --color-fg-muted: var(--__gray2) !important;
     --color-fg-subtle: var(--__gray1) !important;
-    --color-fg-on-emphasis: var(--__white) !important;
+    --color-fg-on-emphasis: var(--__black3) !important;
 
     --color-canvas-default: var(--__black2) !important;
     --color-canvas-overlay: var(--__black1) !important;
