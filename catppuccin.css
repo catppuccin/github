@@ -77,7 +77,13 @@
     --__green_darken: hsl(var(--green_darken));
     --__green_darkest: hsl(var(--green_darkest));
     --__blue_darken: hsl(var(--blue_darken));
-    
+
+    /* CONTRIBUTION GRAPH */
+    --__color-graph-L1: hsl(var(--green), .3);
+    --__color-graph-L2: hsl(var(--green), .6);
+    --__color-graph-L3: hsl(var(--green), .9);
+    --__color-graph-L4: hsl(var(--green));
+
     /* ADVANCED STUFF */
     --color-fg-default: var(--__white) !important;
     --color-fg-muted: var(--__gray2) !important;
@@ -268,10 +274,10 @@
     --color-calendar-halloween-graph-day-L3-bg: var(--__peach) !important;
     --color-calendar-halloween-graph-day-L4-bg:var(--__yellow) !important;
     --color-calendar-graph-day-bg: var(--__black1) !important;
-    --color-calendar-graph-day-L1-bg: var(--__green_darken) !important;
-    --color-calendar-graph-day-L2-bg: var(--__green_darken) !important;
-    --color-calendar-graph-day-L3-bg: var(--__green) !important;
-    --color-calendar-graph-day-L4-bg: var(--__green) !important;
+    --color-calendar-graph-day-L1-bg: var(--__color-graph-L1) !important;
+    --color-calendar-graph-day-L2-bg: var(--__color-graph-L2) !important;
+    --color-calendar-graph-day-L3-bg: var(--__color-graph-L3) !important;
+    --color-calendar-graph-day-L4-bg: var(--__color-graph-L4) !important;
     --color-user-mention-fg: var(--__white) !important;
     --color-user-mention-bg: var(--__yellow) !important;
 
