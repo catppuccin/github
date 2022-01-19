@@ -17,6 +17,12 @@
 
 ## Usage
 
+#### Stylus & Stylish
+1. Install either Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
+2. Create a new custom Style that applies to `github.com`
+3. Copy the contents of [catppuccin.css](https://github.com/catppuccin/github/blob/main/catppuccin.css) and paste them into your created Style
+
+#### Refined Github
 1. Install an extension called [Refined GitHub](https://github.com/refined-github/refined-github)
 2. Right Click on the extension
 3. Go to options/preferences (depends on the browser)
