@@ -334,9 +334,9 @@
     --color-prettylights-syntax-markup-italic: var(--__white) !important;
     --color-prettylights-syntax-markup-bold: var(--__white) !important;
     --color-prettylights-syntax-markup-deleted-text: var(--__white) !important;
-    --color-prettylights-syntax-markup-deleted-bg: var(--__red) !important;
+    --color-prettylights-syntax-markup-deleted-bg: var(--__red_muted) !important;
     --color-prettylights-syntax-markup-inserted-text: var(--__green) !important;
-    --color-prettylights-syntax-markup-inserted-bg: var(--__green_darken) !important;
+    --color-prettylights-syntax-markup-inserted-bg: var(--__green_muted) !important;
     --color-prettylights-syntax-markup-changed-text: var(--__white) !important;
     --color-prettylights-syntax-markup-changed-bg: var(--__red) !important;
     --color-prettylights-syntax-markup-ignored-text: var(--__white) !important;
