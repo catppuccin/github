@@ -152,14 +152,15 @@
     
     /* BUTTONS */   
     --color-btn-text: var(--__white) !important;
-    --color-btn-bg: var(--__black1) !important;
-    --color-btn-border: var(--color-border-subtle) !important;
-    --color-btn-hover-bg: var(--__black1) !important;
-    --color-btn-hover-border: var(--color-border-default) !important;
-    --color-btn-active-bg: var(--__black1) !important;
-    --color-btn-active-border: var(--color-btn-hover-border) !important;
-    --color-btn-selected-bg: var(--__black1) !important;
-    --color-btn-focus-bg: var(--__black1) !important;
+    --color-btn-bg: var(--__black3) !important;
+    --color-btn-border: var(--color-btn-bg) !important;
+    --color-btn-hover-bg: var(--__black4) !important;
+    --color-btn-hover-border: var(--color-btn-hover-bg) !important;
+    --color-btn-active-bg: var(--__black4) !important;
+    --color-btn-active-border: var(--color-btn-active-bg) !important;
+    --color-btn-selected-bg: var(--__black3) !important;
+    --color-btn-focus-bg: var(--__black3) !important;
+    --color-btn-counter-bg: var(--__black2) !important;
     --color-btn-primary-text: var(--__black2) !important;
     --color-btn-primary-bg: var(--__green_darkest) !important;
     --color-btn-primary-hover-bg: var(--__green_darken) !important;
