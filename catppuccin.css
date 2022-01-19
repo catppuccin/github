@@ -412,3 +412,6 @@
     --color-mktg-btn-dark-hover-text: var(--__white) !important;
     --color-mktg-btn-dark-focus-border: var(--__white) !important;
 }
+
+/* button group seperator */
+.BtnGroup-parent:not(:first-child) .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--__black1) !important; }
