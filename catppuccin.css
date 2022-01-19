@@ -160,6 +160,7 @@
     --color-btn-active-border: var(--color-btn-active-bg) !important;
     --color-btn-selected-bg: var(--__black3) !important;
     --color-btn-focus-bg: var(--__black3) !important;
+    --color-btn-counter-bg: var(--__black2) !important;
     --color-btn-primary-text: var(--__black2) !important;
     --color-btn-primary-bg: var(--__green_darkest) !important;
     --color-btn-primary-hover-bg: var(--__green_darken) !important;
