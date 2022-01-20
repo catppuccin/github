@@ -58,21 +58,21 @@
     --__pink: hsl(var(--pink));
 
     /* MUTED VARS */
-    --__black2_muted: hsl(var(--black2), 0.4);
-    --__black1_muted: hsl(var(--black1), 0.4);
-    --__black3_muted: hsl(var(--black3), 0.4);
-    --__gray0_muted: hsl(var(--gray0), 0.4);
-    --__gray1_muted: hsl(var(--gray1), 0.4);
-    --__white_muted: hsl(var(--white), 0.4);
-    --__gray2_muted: hsl(var(--gray2), 0.4);
-    --__black4_muted: hsl(var(--black4), 0.4);
-    --__red_muted: hsl(var(--red), 0.4);
-    --__yellow_muted: hsl(var(--yellow), 0.4);
-    --__peach_muted: hsl(var(--peach), 0.4);
-    --__green_muted: hsl(var(--green), 0.4);
-    --__lavender_muted: hsl(var(--lavender), 0.4);
-    --__blue_muted: hsl(var(--blue), 0.4);
-    --__pink_muted: hsl(var(--pink), 0.4);
+    --__black2_muted: hsl(var(--black2), 0.2);
+    --__black1_muted: hsl(var(--black1), 0.2);
+    --__black3_muted: hsl(var(--black3), 0.2);
+    --__gray0_muted: hsl(var(--gray0), 0.2);
+    --__gray1_muted: hsl(var(--gray1), 0.2);
+    --__white_muted: hsl(var(--white), 0.2);
+    --__gray2_muted: hsl(var(--gray2), 0.2);
+    --__black4_muted: hsl(var(--black4), 0.2);
+    --__red_muted: hsl(var(--red), 0.2);
+    --__yellow_muted: hsl(var(--yellow), 0.2);
+    --__peach_muted: hsl(var(--peach), 0.2);
+    --__green_muted: hsl(var(--green), 0.2);
+    --__lavender_muted: hsl(var(--lavender), 0.2);
+    --__blue_muted: hsl(var(--blue), 0.2);
+    --__pink_muted: hsl(var(--pink), 0.2);
 
     /* DARKEN STUFF */
     --__green_darken: hsl(var(--green_darken));
@@ -333,7 +333,7 @@
     --color-prettylights-syntax-markup-heading: var(--__blue) !important;
     --color-prettylights-syntax-markup-italic: var(--__white) !important;
     --color-prettylights-syntax-markup-bold: var(--__white) !important;
-    --color-prettylights-syntax-markup-deleted-text: var(--__white) !important;
+    --color-prettylights-syntax-markup-deleted-text: var(--__red) !important;
     --color-prettylights-syntax-markup-deleted-bg: var(--__red_muted) !important;
     --color-prettylights-syntax-markup-inserted-text: var(--__green) !important;
     --color-prettylights-syntax-markup-inserted-bg: var(--__green_muted) !important;
