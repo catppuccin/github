@@ -49,6 +49,7 @@
     --__gray1: hsl(var(--gray1));
     --__gray2: hsl(var(--gray2));
     --__white: hsl(var(--white));
+    --__rosewater: hsl(var(--rosewater));
     --__red: hsl(var(--red));
     --__yellow: hsl(var(--yellow));
     --__peach: hsl(var(--peach));
@@ -415,3 +416,6 @@
 
 /* button group seperator */
 .BtnGroup-parent:not(:first-child) .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--__black1) !important; }
+
+.merge-pr .branch-action-icon,
+.merge-pr .branch-action-item-icon{ color: var(--__rosewater) !important; }
