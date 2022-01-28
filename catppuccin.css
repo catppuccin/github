@@ -122,7 +122,7 @@
     --color-success-subtle: var(--__green_muted) !important;
     
     --color-attention-fg: var(--__yellow) !important;
-    --color-attention-emphasis: var(--__yellow_darken) !important;
+    --color-attention-emphasis: var(--__yellow) !important;
     --color-attention-muted: var(--__yellow_muted) !important;
     --color-attention-subtle: var(--__yellow_muted) !important;
     
@@ -418,6 +418,3 @@
 .BtnGroup-parent:not(:first-child) .BtnGroup-item:not(:focus):not(:hover),
 .BtnGroup-item:not(:focus):not(:hover) + .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--__black1) !important; }
 .unstarred.BtnGroup-parent:not(:first-child) > .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--color-btn-border) !important; }
-
-.merge-pr .branch-action-icon,
-.merge-pr .branch-action-item-icon{ color: var(--__rosewater) !important; }
