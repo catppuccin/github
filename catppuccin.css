@@ -415,7 +415,9 @@
 }
 
 /* button group seperator */
-.BtnGroup-parent:not(:first-child) .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--__black1) !important; }
+.BtnGroup-parent:not(:first-child) .BtnGroup-item:not(:focus):not(:hover),
+.BtnGroup-item:not(:focus):not(:hover) + .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--__black1) !important; }
+.unstarred.BtnGroup-parent:not(:first-child) > .BtnGroup-item:not(:focus):not(:hover) { border-left-color: var(--color-btn-border) !important; }
 
 .merge-pr .branch-action-icon,
 .merge-pr .branch-action-item-icon{ color: var(--__rosewater) !important; }
