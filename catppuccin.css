@@ -281,8 +281,8 @@
     --color-calendar-graph-day-L2-bg: var(--__color-graph-L2) !important;
     --color-calendar-graph-day-L3-bg: var(--__color-graph-L3) !important;
     --color-calendar-graph-day-L4-bg: var(--__color-graph-L4) !important;
-    --color-user-mention-fg: var(--__white) !important;
-    --color-user-mention-bg: var(--__yellow) !important;
+    --color-user-mention-fg: var(--__yellow) !important;
+    --color-user-mention-bg: var(--__yellow_muted) !important;
 
     /* HEADER */
 	--color-header-bg: var(--__black1) !important;	
