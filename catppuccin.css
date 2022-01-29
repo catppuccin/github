@@ -387,6 +387,7 @@
     --color-notifications-button-text: var(--__white) !important;
     --color-notifications-button-hover-text: var(--__white) !important;
     --color-notifications-button-hover-bg: var(--__blue_darken) !important;
+    --color-notifications-row-bg: var(--__black1) !important;
 
     /* MARKDOWN ig */
     --color-mktg-success: var(--__green) !important;
