@@ -151,6 +151,8 @@
     
     --color-state-hover-primary-bg: var(--__blue_darken) !important;
     --color-state-hover-primary-border: var(--__blue) !important;
+
+    --color-timeline-badge-bg: var(--color-border-muted) !important;
     
     /* BUTTONS */   
     --color-btn-text: var(--__white) !important;
