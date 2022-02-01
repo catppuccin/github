@@ -326,9 +326,9 @@
     --color-prettylights-syntax-variable: var(--__yellow) !important;
     --color-prettylights-syntax-brackethighlighter-unmatched: var(--__peach) !important;
     --color-prettylights-syntax-invalid-illegal-text: var(--__white) !important;
-    --color-prettylights-syntax-invalid-illegal-bg: var(--__red) !important;
+    --color-prettylights-syntax-invalid-illegal-bg: var(--__red_muted) !important;
     --color-prettylights-syntax-carriage-return-text: var(--__white) !important;
-    --color-prettylights-syntax-carriage-return-bg: var(--__red) !important;
+    --color-prettylights-syntax-carriage-return-bg: var(--__red_muted) !important;
     --color-prettylights-syntax-string-regexp: var(--__green) !important;
     --color-prettylights-syntax-markup-list: var(--__yellow) !important;
     --color-prettylights-syntax-markup-heading: var(--__blue) !important;
@@ -338,9 +338,9 @@
     --color-prettylights-syntax-markup-deleted-bg: var(--__red_muted) !important;
     --color-prettylights-syntax-markup-inserted-text: var(--__green) !important;
     --color-prettylights-syntax-markup-inserted-bg: var(--__green_muted) !important;
-    --color-prettylights-syntax-markup-changed-text: var(--__white) !important;
-    --color-prettylights-syntax-markup-changed-bg: var(--__red) !important;
-    --color-prettylights-syntax-markup-ignored-text: var(--__white) !important;
+    --color-prettylights-syntax-markup-changed-text: var(--__yellow) !important;
+    --color-prettylights-syntax-markup-changed-bg: var(--__yellow_muted) !important;
+    --color-prettylights-syntax-markup-ignored-text: var(--__black0) !important;
     --color-prettylights-syntax-markup-ignored-bg: var(--__blue) !important;
     --color-prettylights-syntax-meta-diff-range: var(--__pink) !important;
     --color-prettylights-syntax-brackethighlighter-angle: var(--__gray0) !important;
