@@ -6,27 +6,33 @@
 </h3>
 
 <p align="center">
-    <a href="https://github.com/catppuccin/github/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/github?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/github/issues"><img src="https://img.shields.io/github/issues/catppuccin/github?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
-    <a href="https://github.com/catppuccin/github/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/github?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/github/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/github?colorA=1e1e28&colorB=c9cbff&style=for-the-badge&logo=starship style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/github/issues"><img src="https://img.shields.io/github/issues/catppuccin/github?colorA=1e1e28&colorB=f7be95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/github/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/github?colorA=1e1e28&colorB=b1e1a6&style=for-the-badge"></a>
 </p>
 
 <p align="center">
-  <img src="assets/demo.png"/>
+	<img src="assets/demo.png"/>
 </p>
 
 ## Usage
 
-#### Stylus & Stylish
-1. Install either Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe)
-2. Create a new custom Style that applies to `github.com`
-3. Copy the contents of [catppuccin.css](https://github.com/catppuccin/github/blob/main/catppuccin.css) and paste them into your created Style
+#### Stylus
+1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
+2. [Click here to install.](https://github.com/catppuccin/github/raw/main/CatppuccinGithub.user.css)
+
+#### Stylish
+1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
+2. Create a new custom Style that applies to `github.com`.
+3. [Click here, click three dots at left top and `Copy Lines`](CatppuccinGithub.user.css#L13-L398) or open [CatpuccinGithub.user.css](CatppuccinGithub.user.css) file and copy everything manually inside `@-moz-document`.
+4. Paste copied code to created Style.
 
 #### Refined Github
-1. Install an extension called [Refined GitHub](https://github.com/refined-github/refined-github)
+1. Install the extension called [Refined GitHub](https://github.com/refined-github/refined-github)
 2. Right Click on the extension
 3. Go to options/preferences (depends on the browser)
-4. Copy the contents of [catppuccin.css](https://github.com/catppuccin/github/blob/main/catppuccin.css) and paste them into the box below "Custom CSS"
+4. [Click here, click three dots at left top and `Copy Lines`](CatppuccinGithub.user.css#L13-L398) or open [CatpuccinGithub.user.css](CatppuccinGithub.user.css) file and copy everything manually inside `@-moz-document`.
+5. Paste copied code to "Custom CSS" box.
 
 ## 💝 Thanks to
 
