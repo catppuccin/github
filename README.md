@@ -24,15 +24,13 @@
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
 2. Create a new custom Style that applies to `github.com`.
-3. [Click here, click three dots at left top and `Copy Lines`](CatppuccinGithub.user.css#L14-L399) or open [CatpuccinGithub.user.css](CatppuccinGithub.user.css) file and copy everything manually inside `@-moz-document`.
-4. Paste copied code to created Style.
+3. Copy content of [catppuccin.css](catppuccin.css) and paste to created Style.
 
 #### Refined Github
 1. Install the extension called [Refined GitHub](https://github.com/refined-github/refined-github)
 2. Right Click on the extension
 3. Go to options/preferences (depends on the browser)
-4. [Click here, click three dots at left top and `Copy Lines`](CatppuccinGithub.user.css#L14-L399) or open [CatpuccinGithub.user.css](CatppuccinGithub.user.css) file and copy everything manually inside `@-moz-document`.
-5. Paste copied code to "Custom CSS" box.
+4. Copy content of [catppuccin.css](catppuccin.css) and paste to "Custom CSS" box.
 
 ## 💝 Thanks to
 
