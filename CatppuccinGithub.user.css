@@ -11,5 +11,5 @@
 ==/UserStyle== */
 
 @-moz-document regexp('https?:\/\/(gist\.)?github.com.*') {
-	@import url('https://raw.githubusercontent.com/catppuccin/github/main/catppuccin.css');
+	@import url('https://catppuccin.github.io/github/catppuccin.css');
 }
