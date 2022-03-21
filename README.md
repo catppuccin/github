@@ -19,7 +19,8 @@
 
 #### Stylus
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
-2. [Click here to install.](https://github.com/catppuccin/github/raw/main/CatppuccinGithub.user.css)
+2. Enable CSP Patching from Stylus Settings > Advanced.
+3. [Click here to install.](https://github.com/catppuccin/github/raw/main/CatppuccinGithub.user.css)
 
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
