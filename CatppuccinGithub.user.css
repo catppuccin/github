@@ -1,0 +1,15 @@
+/* ==UserStyle==
+@name Catppuccin GitHub
+@namespace github.com/catppuccin
+@homepageURL https://github.com/catppuccin/github
+@version 1.0
+@updateURL https://raw.githubusercontent.com/catppuccin/github/main/CatppuccinGithub.user.css
+@description Soothing pastel theme for GitHub
+@author Pocco81 (https://github.com/Pocco81)
+		Andreas Grafen (https://github.com/andreasgrafen)
+@license MIT
+==/UserStyle== */
+
+@-moz-document regexp('https?:\/\/(gist\.)?github.com.*') {
+	@import url('https://catppuccin.github.io/github/catppuccin.css');
+}
