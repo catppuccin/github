@@ -580,114 +580,116 @@
         --color-scale-coral-8: #640D04;
         --color-scale-coral-9: #460701;
     }
-}
 
-[data-color-mode="light"][data-light-theme*="dark"], [data-color-mode="dark"][data-dark-theme*="dark"] {
-    --color-workflow-card-connector: var(--color-scale-gray-5);
-    --color-workflow-card-connector-bg: var(--color-scale-gray-5);
-    --color-workflow-card-connector-inactive: var(--color-border-default);
-    --color-workflow-card-connector-inactive-bg: var(--color-border-default);
-    --color-workflow-card-connector-highlight: var(--color-scale-blue-5);
-    --color-workflow-card-connector-highlight-bg: var(--color-scale-blue-5);
-    --color-workflow-card-bg: var(--color-scale-gray-7);
-    --color-workflow-card-inactive-bg: var(--color-canvas-inset);
-    --color-workflow-card-header-shadow: rgba(27, 31, 35, 0.04);
-    --color-workflow-card-progress-complete-bg: var(--color-scale-blue-5);
-    --color-workflow-card-progress-incomplete-bg: var(--color-scale-gray-6);
-    --color-discussions-state-answered-icon: var(--color-scale-green-3);
-    --color-bg-discussions-row-emoji-box: var(--color-scale-gray-6);
-    --color-notifications-button-text: var(--color-scale-white);
-    --color-notifications-button-hover-text: var(--color-scale-white);
-    --color-notifications-button-hover-bg: var(--color-scale-blue-4);
-    --color-notifications-row-read-bg: var(--color-canvas-default);
-    --color-notifications-row-bg: var(--color-canvas-subtle);
-    --color-icon-directory: var(--color-fg-muted);
-    --color-checks-step-error-icon: var(--color-scale-red-4);
-    --color-calendar-halloween-graph-day-L1-bg: #631c03;
-    --color-calendar-halloween-graph-day-L2-bg: #bd561d;
-    --color-calendar-halloween-graph-day-L3-bg: #fa7a18;
-    --color-calendar-halloween-graph-day-L4-bg: #fddf68;
-    --color-calendar-graph-day-bg:  $surface0;
-    --color-calendar-graph-day-border: transparent;
-    /* These could do with a bit of refining */
-    --color-calendar-graph-day-L1-bg: darken($green, 30%);
-    --color-calendar-graph-day-L2-bg: darken($green, 20%);
-    --color-calendar-graph-day-L3-bg: darken($green, 10%);
-    --color-calendar-graph-day-L4-bg: $green;
-    --color-calendar-graph-day-L1-border: transparent;
-    --color-calendar-graph-day-L2-border: transparent;
-    --color-calendar-graph-day-L3-border: transparent;
-    --color-calendar-graph-day-L4-border: transparent;
-    --color-user-mention-fg: var(--color-scale-yellow-0);
-    --color-user-mention-bg: var(--color-scale-yellow-8);
-    --color-text-white:  $text;
-}
 
-/* Buttons */
-.btn-danger {
-    background: var(--color-btn-danger-bg)
-}
+    [data-color-mode="light"][data-light-theme*="dark"], [data-color-mode="dark"][data-dark-theme*="dark"] {
+        --color-workflow-card-connector: var(--color-scale-gray-5);
+        --color-workflow-card-connector-bg: var(--color-scale-gray-5);
+        --color-workflow-card-connector-inactive: var(--color-border-default);
+        --color-workflow-card-connector-inactive-bg: var(--color-border-default);
+        --color-workflow-card-connector-highlight: var(--color-scale-blue-5);
+        --color-workflow-card-connector-highlight-bg: var(--color-scale-blue-5);
+        --color-workflow-card-bg: var(--color-scale-gray-7);
+        --color-workflow-card-inactive-bg: var(--color-canvas-inset);
+        --color-workflow-card-header-shadow: rgba(27, 31, 35, 0.04);
+        --color-workflow-card-progress-complete-bg: var(--color-scale-blue-5);
+        --color-workflow-card-progress-incomplete-bg: var(--color-scale-gray-6);
+        --color-discussions-state-answered-icon: var(--color-scale-green-3);
+        --color-bg-discussions-row-emoji-box: var(--color-scale-gray-6);
+        --color-notifications-button-text: var(--color-scale-white);
+        --color-notifications-button-hover-text: var(--color-scale-white);
+        --color-notifications-button-hover-bg: var(--color-scale-blue-4);
+        --color-notifications-row-read-bg: var(--color-canvas-default);
+        --color-notifications-row-bg: var(--color-canvas-subtle);
+        --color-icon-directory: var(--color-fg-muted);
+        --color-checks-step-error-icon: var(--color-scale-red-4);
+        --color-calendar-halloween-graph-day-L1-bg: #631c03;
+        --color-calendar-halloween-graph-day-L2-bg: #bd561d;
+        --color-calendar-halloween-graph-day-L3-bg: #fa7a18;
+        --color-calendar-halloween-graph-day-L4-bg: #fddf68;
+        --color-calendar-graph-day-bg:  $surface0;
+        --color-calendar-graph-day-border: transparent;
+        /* These could do with a bit of refining */
+        --color-calendar-graph-day-L1-bg: darken($green, 30%);
+        --color-calendar-graph-day-L2-bg: darken($green, 20%);
+        --color-calendar-graph-day-L3-bg: darken($green, 10%);
+        --color-calendar-graph-day-L4-bg: $green;
+        --color-calendar-graph-day-L1-border: transparent;
+        --color-calendar-graph-day-L2-border: transparent;
+        --color-calendar-graph-day-L3-border: transparent;
+        --color-calendar-graph-day-L4-border: transparent;
+        --color-user-mention-fg: var(--color-scale-yellow-0);
+        --color-user-mention-bg: var(--color-scale-yellow-8);
+        --color-text-white:  $text;
+    }
 
-/* Issue tags */
-.hx_IssueLabel {
-    --text: $text;
-}
-if ($type == light) { /* Maybe we could make a custom algorithm that converts the colors to be more catppuccin like? */
-    @css {
-        .hx_IssueLabel { 
-            --lightness-threshold: 0.453;
-            --border-threshold: 0.96;
-            --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1));
-            //color: hsl(0deg, 0%, calc(var(--lightness-switch) * 100%)) !important;
-            color: var(--text) !important;
-            background: rgb(var(--label-r), var(--label-g), var(--label-b)) !important;
-            border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) - 25) * 1%), var(--border-alpha)) !important;
+    /* Buttons */
+    .btn-danger {
+        background: var(--color-btn-danger-bg)
+    }
+
+    /* Issue tags */
+    .hx_IssueLabel {
+        --text: $text;
+    }
+    if ($type == light) { /* Maybe we could make a custom algorithm that converts the colors to be more catppuccin like? */
+        @css {
+            .hx_IssueLabel { 
+                --lightness-threshold: 0.453;
+                --border-threshold: 0.96;
+                --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1));
+                //color: hsl(0deg, 0%, calc(var(--lightness-switch) * 100%)) !important;
+                color: var(--text) !important;
+                background: rgb(var(--label-r), var(--label-g), var(--label-b)) !important;
+                border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) - 25) * 1%), var(--border-alpha)) !important;
+            }
+        }
+    } else {
+        @css {
+            .hx_IssueLabel { 
+                --lightness-threshold: 0.6;
+                --background-alpha: 0.18;
+                --border-alpha: 0.3;
+                --lighten-by: calc(((var(--lightness-threshold) - var(--perceived-lightness)) * 100) * var(--lightness-switch));
+                color: hsl(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) + var(--lighten-by)) * 1%)) !important;
+                background: rgba(var(--label-r), var(--label-g), var(--label-b), var(--background-alpha)) !important;
+                border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) + var(--lighten-by)) * 1%), var(--border-alpha)) !important;
+            }
         }
     }
-} else {
-    @css {
-        .hx_IssueLabel { 
-            --lightness-threshold: 0.6;
-            --background-alpha: 0.18;
-            --border-alpha: 0.3;
-            --lighten-by: calc(((var(--lightness-threshold) - var(--perceived-lightness)) * 100) * var(--lightness-switch));
-            color: hsl(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) + var(--lighten-by)) * 1%)) !important;
-            background: rgba(var(--label-r), var(--label-g), var(--label-b), var(--background-alpha)) !important;
-            border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) + var(--lighten-by)) * 1%), var(--border-alpha)) !important;
-        }
+
+    /* Labels */
+    .Label {
+        color:  $base;
+        border-color: transparent;
     }
-}
 
-/* Labels */
-.Label {
-    color:  $base;
-    border-color: transparent;
-}
+    .Label--secondary {
+        background-color:  $surface0;
+        color:  $text;
+    }
 
-.Label--secondary {
-    background-color:  $surface0;
-    color:  $text;
-}
+    .Label--success {
+        background-color:  $green;
+    }
 
-.Label--success {
-    background-color:  $green;
-}
+    /* Search */
+    .header-search-input {
+        color:  $text !important;
+    }
+    .header-search-input::placeholder {
+        color: $subtext1 !important;
+    }
 
-/* Search */
-.header-search-input {
-    color:  $text !important;
-}
-.header-search-input::placeholder {
-    color: $subtext1 !important;
-}
+    /* Misc */
+    .col-md-8 {
+        background-color:  $base;
+    }
 
-/* Misc */
-.col-md-8 {
-    background-color:  $base;
-}
+    /* Large notification */
+    .flash {
+        background:  $mantle;
+        border-color: transparent;
+    }
 
-/* Large notification */
-.flash {
-    background:  $mantle;
-    border-color: transparent;
 }
