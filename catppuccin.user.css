@@ -1,10 +1,11 @@
 /* ==UserStyle==
-@name           Empty @name replaces the default template - 29/05/2022, 18:58:06
-@namespace      github.com/openstyles/stylus
+@name           Discord Catppuccin
+@namespace      github.com/catppuccin/discord
 @version        1.0.0
-@description    A new userstyle
-@author         Me
-@preprocessor stylus
+@description    Soothing pastel theme for GitHub
+@author         Catppuccin
+@updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
+@preprocessor   stylus
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
 @var checkbox topbar "Topbar colors" 1
