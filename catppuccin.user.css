@@ -673,6 +673,10 @@
         background-color:  $green;
     }
 
+    .timeline-comment-header .Label {
+        color: var(--color-fg-muted);
+    }
+
     /* Search */
     .header-search-input {
         color:  $text !important;
