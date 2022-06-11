@@ -582,7 +582,12 @@
     }
 
 
-    [data-color-mode="light"][data-light-theme*="dark"], [data-color-mode="dark"][data-dark-theme*="dark"] {
+    [data-color-mode="light"][data-light-theme*="dark"],
+    [data-color-mode="light"][data-light-theme*="light"],
+    [data-color-mode="dark"][data-dark-theme*="dark"],
+    [data-color-mode="dark"][data-dark-theme*="light"],
+    [data-color-mode="auto"][data-dark-theme*="dark"],
+    [data-color-mode="auto"][data-dark-theme*="light"] {
         --color-workflow-card-connector: var(--color-scale-gray-5);
         --color-workflow-card-connector-bg: var(--color-scale-gray-5);
         --color-workflow-card-connector-inactive: var(--color-border-default);
@@ -601,7 +606,7 @@
         --color-notifications-button-hover-bg: var(--color-scale-blue-4);
         --color-notifications-row-read-bg: var(--color-canvas-default);
         --color-notifications-row-bg: var(--color-canvas-subtle);
-        --color-icon-directory: var(--color-fg-muted);
+        --color-icon-directory: $text;
         --color-checks-step-error-icon: var(--color-scale-red-4);
         --color-calendar-halloween-graph-day-L1-bg: #631c03;
         --color-calendar-halloween-graph-day-L2-bg: #bd561d;
