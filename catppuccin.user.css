@@ -9,6 +9,8 @@
 
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
 @var checkbox topbar "Topbar colors" 1
+@var checkbox blueaccent "Blue Accent" 0
+@var checkbox usefont "Use Inter font" 0
 
 ==/UserStyle== */
 
@@ -460,10 +462,17 @@ disabledButtonBG(col)
         --color-neutral-emphasis: $overlay2;
         --color-neutral-muted: rgba(110, 118, 129, 0.4);
         --color-neutral-subtle: rgba(110, 118, 129, 0.1);
-        --color-accent-fg:  $blue;
-        --color-accent-emphasis:  $blue;
-        --color-accent-muted: alpha($blue, 0.4);
-        --color-accent-subtle: alpha($blue, 0.15);
+        if (blueaccent) {
+            --color-accent-fg:  $blue;
+            --color-accent-emphasis:  $blue;
+            --color-accent-muted: alpha($blue, 0.4);
+            --color-accent-subtle: alpha($blue, 0.15);
+        } else {
+            --color-accent-fg:  $rosewater;
+            --color-accent-emphasis:  $rosewater;
+            --color-accent-muted: alpha($rosewater, 0.4);
+            --color-accent-subtle: alpha($rosewater, 0.15);
+        }
         --color-success-fg:  $green;
         --color-success-emphasis:  $green;
         --color-success-muted: rgba(46, 160, 67, 0.4);
@@ -718,4 +727,11 @@ disabledButtonBG(col)
         border-color: transparent;
     }
 
+    if (usefont) {
+        body,
+        .markdown-body {
+            font-family: inter;
+        }
+        
+    }
 }
