@@ -174,7 +174,7 @@ disabledButtonBG(col)
         --color-diffstat-addition-border: rgba(240, 246, 252, 0.1);
         --color-diffstat-addition-bg: $green;
         --color-search-keyword-hl: rgba(210, 153, 34, 0.4);
-        --color-prettylights-syntax-comment: $subtext0;
+        --color-prettylights-syntax-comment: $overlay1;
         --color-prettylights-syntax-constant: $blue;
         --color-prettylights-syntax-entity: $blue;
         --color-prettylights-syntax-storage-modifier-import: $peach;
@@ -379,7 +379,7 @@ disabledButtonBG(col)
         --color-btn-primary-hover-border: rgba(240, 246, 252, 0.1);
         --color-btn-primary-selected-bg: selectedButtonBG($green);
         --color-btn-primary-selected-shadow: 0 0 transparent;
-        --color-btn-primary-disabled-text: $subtext0;
+        --color-btn-primary-disabled-text: $overlay1;
         --color-btn-primary-disabled-bg: disabledButtonBG($green);
         --color-btn-primary-disabled-border: transparent;
         --color-btn-primary-focus-bg: #238636;
@@ -398,7 +398,7 @@ disabledButtonBG(col)
         --color-btn-outline-selected-bg: #0d419d;
         --color-btn-outline-selected-border: rgba(240, 246, 252, 0.1);
         --color-btn-outline-selected-shadow: 0 0 transparent;
-        --color-btn-outline-disabled-text: $subtext0;
+        --color-btn-outline-disabled-text: $overlay1;
         --color-btn-outline-disabled-bg: $surface2;
         --color-btn-outline-disabled-counter-bg: rgba(31, 111, 235, 0.05);
         --color-btn-outline-focus-border: rgba(240, 246, 252, 0.1);
@@ -417,7 +417,7 @@ disabledButtonBG(col)
         --color-btn-danger-selected-bg: selectedButtonBG($red);
         --color-btn-danger-selected-border: transparent;
         --color-btn-danger-selected-shadow: 0 0 transparent;
-        --color-btn-danger-disabled-text: $subtext0;
+        --color-btn-danger-disabled-text: $overlay1;
         --color-btn-danger-disabled-bg: disabledButtonBG($red);
         --color-btn-danger-disabled-counter-bg: rgba(218, 54, 51, 0.05);
         --color-btn-danger-focus-border: #f85149;
@@ -750,6 +750,9 @@ disabledButtonBG(col)
         .markdown-body {
             font-family: inter;
         }
-        
+    }
+    
+    ::selection {
+        background: $surface2 !important;
     }
 }
