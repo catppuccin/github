@@ -715,6 +715,14 @@ disabledButtonBG(col)
     .header-search-input::placeholder {
         color: $subtext1 !important;
     }
+    
+    /* Tags */ 
+    .topic-tag {
+        --color-accent-fg:  $blue;
+        --color-accent-emphasis:  $blue;
+        --color-accent-muted: alpha($blue, 0.4);
+        --color-accent-subtle: alpha($blue, 0.15);
+    }
 
     /* Misc */
     .col-md-8 {
@@ -725,6 +733,11 @@ disabledButtonBG(col)
     .flash {
         background:  $mantle;
         border-color: transparent;
+    }
+    
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+        color: $subtext1
     }
 
     if (usefont) {
