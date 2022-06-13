@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Github Catppuccin
 @namespace      github.com/catppuccin/github
-@version        1.1.0
+@version        1.1.1
 @description    Soothing pastel theme for GitHub
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
@@ -22,7 +22,7 @@ selectedButtonBG(col)
     darken(col, 5)
 
 disabledButtonBG(col)
-    darken(desaturate(col, 60), 50)
+    darken(desaturate(col, 50), 50)
 @-moz-document url-prefix("https://github.com"), url-prefix("https://gist.github.com") {
     if (theme=="Latte") {
         $type = light
@@ -379,9 +379,9 @@ disabledButtonBG(col)
         --color-btn-primary-hover-border: rgba(240, 246, 252, 0.1);
         --color-btn-primary-selected-bg: selectedButtonBG($green);
         --color-btn-primary-selected-shadow: 0 0 transparent;
-        --color-btn-primary-disabled-text: rgba(255, 255, 255, 0.5);
-        --color-btn-primary-disabled-bg: rgba(35, 134, 54, 0.6);
-        --color-btn-primary-disabled-border: rgba(240, 246, 252, 0.1);
+        --color-btn-primary-disabled-text: $subtext0;
+        --color-btn-primary-disabled-bg: disabledButtonBG($green);
+        --color-btn-primary-disabled-border: transparent;
         --color-btn-primary-focus-bg: #238636;
         --color-btn-primary-focus-border: rgba(240, 246, 252, 0.1);
         --color-btn-primary-focus-shadow: 0 0 0 3px rgba(46, 164, 79, 0.4);
@@ -733,6 +733,11 @@ disabledButtonBG(col)
     .flash {
         background:  $mantle;
         border-color: transparent;
+    }
+    
+    /* Button Fix */
+    .color-bg-subtle {
+        background-color: transparent !important;
     }
     
     /* Headers */
