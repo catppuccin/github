@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-	<img src="assets/demo.png"/>
+	<img src="assets/screenshot.png"/>
 </p>
 
 ## Usage
@@ -28,17 +28,11 @@
 2. Create a new custom Style that applies to `github.com`.
 3. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to created Style.
 
-#### Refined Github
-1. Install the extension called [Refined GitHub](https://github.com/refined-github/refined-github)
-2. Right Click on the extension
-3. Go to options/preferences (depends on the browser)
-4. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to "Custom CSS" box.
-
 ## 💝 Thanks to
 
 - [Pocco81](https://github.com/Pocco81)
-- [Andreas Grafen](https://github.com/andreasgrafen)
 - [Umbreon](https://github.com/GlowingUmbreon)
+- [Andreas Grafen](https://github.com/andreasgrafen)
 
 &nbsp;
 
