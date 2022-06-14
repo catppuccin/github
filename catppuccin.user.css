@@ -22,7 +22,11 @@ selectedButtonBG(col)
     darken(col, 5)
 
 disabledButtonBG(col)
-    darken(desaturate(col, 50), 50)
+    if ($type == light) {
+        lighten(desaturate(col, 50), 50)    
+    } else {
+        darken(desaturate(col, 50), 50)    
+    }
 @-moz-document url-prefix("https://github.com"), url-prefix("https://gist.github.com") {
     if (theme=="Latte") {
         $type = light
@@ -379,7 +383,7 @@ disabledButtonBG(col)
         --color-btn-primary-hover-border: rgba(240, 246, 252, 0.1);
         --color-btn-primary-selected-bg: selectedButtonBG($green);
         --color-btn-primary-selected-shadow: 0 0 transparent;
-        --color-btn-primary-disabled-text: $overlay1;
+        --color-btn-primary-disabled-text: $subtext0;
         --color-btn-primary-disabled-bg: disabledButtonBG($green);
         --color-btn-primary-disabled-border: transparent;
         --color-btn-primary-focus-bg: #238636;
@@ -398,7 +402,7 @@ disabledButtonBG(col)
         --color-btn-outline-selected-bg: #0d419d;
         --color-btn-outline-selected-border: rgba(240, 246, 252, 0.1);
         --color-btn-outline-selected-shadow: 0 0 transparent;
-        --color-btn-outline-disabled-text: $overlay1;
+        --color-btn-outline-disabled-text: $subtext0;
         --color-btn-outline-disabled-bg: $surface2;
         --color-btn-outline-disabled-counter-bg: rgba(31, 111, 235, 0.05);
         --color-btn-outline-focus-border: rgba(240, 246, 252, 0.1);
@@ -417,7 +421,7 @@ disabledButtonBG(col)
         --color-btn-danger-selected-bg: selectedButtonBG($red);
         --color-btn-danger-selected-border: transparent;
         --color-btn-danger-selected-shadow: 0 0 transparent;
-        --color-btn-danger-disabled-text: $overlay1;
+        --color-btn-danger-disabled-text: $subtext0;
         --color-btn-danger-disabled-bg: disabledButtonBG($red);
         --color-btn-danger-disabled-counter-bg: rgba(218, 54, 51, 0.05);
         --color-btn-danger-focus-border: #f85149;
