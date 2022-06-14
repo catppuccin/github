@@ -22,7 +22,11 @@ selectedButtonBG(col)
     darken(col, 5)
 
 disabledButtonBG(col)
-    darken(desaturate(col, 50), 50)
+    if ($type == light) {
+        lighten(desaturate(col, 50), 50)    
+    } else {
+        darken(desaturate(col, 50), 50)    
+    }
 @-moz-document url-prefix("https://github.com"), url-prefix("https://gist.github.com") {
     if (theme=="Latte") {
         $type = light
@@ -174,7 +178,7 @@ disabledButtonBG(col)
         --color-diffstat-addition-border: rgba(240, 246, 252, 0.1);
         --color-diffstat-addition-bg: $green;
         --color-search-keyword-hl: rgba(210, 153, 34, 0.4);
-        --color-prettylights-syntax-comment: $subtext0;
+        --color-prettylights-syntax-comment: $overlay1;
         --color-prettylights-syntax-constant: $blue;
         --color-prettylights-syntax-entity: $blue;
         --color-prettylights-syntax-storage-modifier-import: $peach;
@@ -750,6 +754,9 @@ disabledButtonBG(col)
         .markdown-body {
             font-family: inter;
         }
-        
+    }
+    
+    ::selection {
+        background: $surface2 !important;
     }
 }
