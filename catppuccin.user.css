@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Github Catppuccin
 @namespace      github.com/catppuccin/github
-@version        1.1.1
+@version        1.1.2
 @description    Soothing pastel theme for GitHub
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
@@ -645,9 +645,9 @@ disabledButtonBG(col)
         --color-calendar-graph-day-bg:  $surface0;
         --color-calendar-graph-day-border: transparent;
         /* These could do with a bit of refining */
-        --color-calendar-graph-day-L1-bg: darken($green, 30%);
-        --color-calendar-graph-day-L2-bg: darken($green, 20%);
-        --color-calendar-graph-day-L3-bg: darken($green, 10%);
+        --color-calendar-graph-day-L1-bg: spin(rgba($green, 40%), 15deg);
+        --color-calendar-graph-day-L2-bg: spin(rgba($green, 60%), 10deg);
+        --color-calendar-graph-day-L3-bg: spin(rgba($green, 80%), 5deg);
         --color-calendar-graph-day-L4-bg: $green;
         --color-calendar-graph-day-L1-border: transparent;
         --color-calendar-graph-day-L2-border: transparent;
