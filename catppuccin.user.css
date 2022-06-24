@@ -196,10 +196,10 @@ disabledButtonBG(col)
         --color-prettylights-syntax-markup-heading: $teal;
         --color-prettylights-syntax-markup-italic: #f0f;
         --color-prettylights-syntax-markup-bold: $yellow;
-        --color-prettylights-syntax-markup-deleted-text: #f0f;
-        --color-prettylights-syntax-markup-deleted-bg: #f0f;
-        --color-prettylights-syntax-markup-inserted-text: #f0f;
-        --color-prettylights-syntax-markup-inserted-bg: #f0f;
+        --color-prettylights-syntax-markup-deleted-text: var(--color-diff-blob-deletion-fg);
+        --color-prettylights-syntax-markup-deleted-bg: var(--color-diff-blob-deletion-word-bg);
+        --color-prettylights-syntax-markup-inserted-text: var(--color-diff-blob-addition-fg);
+        --color-prettylights-syntax-markup-inserted-bg: var(--color-diff-blob-addition-word-bg);
         --color-prettylights-syntax-markup-changed-text: #f0f;
         --color-prettylights-syntax-markup-changed-bg: #f0f;
         --color-prettylights-syntax-markup-ignored-text: #f0f;
