@@ -195,13 +195,13 @@
         --color-prettylights-syntax-markup-heading: $teal;
         --color-prettylights-syntax-markup-italic: #f0f;
         --color-prettylights-syntax-markup-bold: $yellow;
-        --color-prettylights-syntax-markup-deleted-text: #f0f;
-        --color-prettylights-syntax-markup-deleted-bg: #f0f;
-        --color-prettylights-syntax-markup-inserted-text: #f0f;
-        --color-prettylights-syntax-markup-inserted-bg: #f0f;
-        --color-prettylights-syntax-markup-changed-text: #f0f;
-        --color-prettylights-syntax-markup-changed-bg: #f0f;
-        --color-prettylights-syntax-markup-ignored-text: #f0f;
+        --color-prettylights-syntax-markup-deleted-text: $text;
+        --color-prettylights-syntax-markup-deleted-bg: alpha($red, 0.4);
+        --color-prettylights-syntax-markup-inserted-text: $text;
+        --color-prettylights-syntax-markup-inserted-bg: alpha($green, 0.4);
+        --color-prettylights-syntax-markup-changed-text: $text;
+        --color-prettylights-syntax-markup-changed-bg: alpha($yellow, 0.4);
+        --color-prettylights-syntax-markup-ignored-text: $text;
         --color-prettylights-syntax-markup-ignored-bg: #f0f;
         --color-prettylights-syntax-meta-diff-range: #f0f;
         --color-prettylights-syntax-brackethighlighter-angle: #f0f;
@@ -754,11 +754,6 @@
         .markdown-body {
             font-family: inter;
         }
-    }
-    
-    a[href="https://github.com/catppuccin/discord/stargazers"] img {
-        //content: url("https://img.shields.io/github/stars/catppuccin/discord?colorA=ff0000&colorB=b7bdf8&style=for-the-badge&logo=starship style=for-the-badge")
-        content: selectors()
     }
     
     ::selection {
