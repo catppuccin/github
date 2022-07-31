@@ -43,6 +43,7 @@
         $base = #eff1f5
         $mantle = #e6e9ef
         $crust = #dce0e8
+        $shadow = #dbdfef
     }
     else if (theme=="Frappe") {
         $type = dark
@@ -73,6 +74,7 @@
         $base = #303446
         $mantle = #292c3c
         $crust = #232634
+        $shadow = #010409
     }
     else if (theme=="Macchiato") {
         $type = dark
@@ -103,6 +105,7 @@
         $base = #24273a
         $mantle = #1e2030
         $crust = #181926
+        $shadow = #010409
     }
     else if (theme=="Mocha") {
         $type = dark
@@ -133,6 +136,7 @@
         $base = #1e1e2e
         $mantle = #181825
         $crust = #11111b
+        $shadow = #010409
     }
     
     /* Functions */
@@ -458,9 +462,9 @@
         --color-border-muted:  $surface0;
         --color-border-subtle: rgba(240, 246, 252, 0.1);
         --color-shadow-small: 0 0 transparent;
-        --color-shadow-medium: 0 3px 6px #010409;
-        --color-shadow-large: 0 8px 24px #010409;
-        --color-shadow-extra-large: 0 12px 48px #010409;
+        --color-shadow-medium: 0 3px 6px $shadow;
+        --color-shadow-large: 0 8px 24px $shadow;
+        --color-shadow-extra-large: 0 12px 48px $shadow;
         --color-neutral-emphasis-plus: #6e7681;
         --color-neutral-emphasis: $overlay2;
         --color-neutral-muted: rgba(110, 118, 129, 0.4);
