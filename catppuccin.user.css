@@ -747,7 +747,10 @@
     .color-bg-subtle {
         background-color: transparent !important;
     }
-    
+    /* Button selection Fix */
+    .navigation-item[aria-selected="true"] .color-fg-muted {
+        color: $base !important;
+    }
     /* Headers */
     h1, h2, h3, h4, h5, h6 {
         color: $subtext1
