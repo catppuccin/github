@@ -6,15 +6,13 @@
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
 @preprocessor   stylus
-
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
 @var checkbox topbar "Topbar colors" 1
 @var checkbox blueaccent "Blue Accent" 0
 @var checkbox usefont "Use Inter font" 0
-
 ==/UserStyle== */
-@-moz-document url-prefix("https://github.com"), url-prefix("https://gist.github.com") {
-    if (theme=="Latte") {
+@-moz-document regexp("https://(gists\.)*github.com(?!/marketplace).*") {
+  if (theme=="Latte") {
         $type = light
         
         $rosewater = #dc8a78
