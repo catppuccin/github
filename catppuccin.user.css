@@ -11,7 +11,7 @@
 @var checkbox blueaccent "Blue Accent" 0
 @var checkbox usefont "Use Inter font" 0
 ==/UserStyle== */
-@-moz-document regexp("https://(gists\.)*github.com(?!/marketplace).*") {
+@-moz-document regexp("https://(gists\\.)*github.com(?!/marketplace).*") {
   if (theme=="Latte") {
         $type = light
         
