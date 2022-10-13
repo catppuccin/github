@@ -188,8 +188,8 @@
       --color-prettylights-syntax-string: $green;
       --color-prettylights-syntax-variable: $peach;
       --color-prettylights-syntax-brackethighlighter-unmatched: #f0f;
-      --color-prettylights-syntax-invalid-illegal-text: #f0f;
-      --color-prettylights-syntax-invalid-illegal-bg: #f0f;
+      --color-prettylights-syntax-invalid-illegal-text: $red;
+      --color-prettylights-syntax-invalid-illegal-bg: alpha($red, 0.15);
       --color-prettylights-syntax-carriage-return-text: #f0f;
       --color-prettylights-syntax-carriage-return-bg: #f0f;
       --color-prettylights-syntax-string-regexp: #f0f;
