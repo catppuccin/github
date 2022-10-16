@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Github Catppuccin
 @namespace      github.com/catppuccin/github
-@version        1.1.5
+@version        1.1.6
 @description    Soothing pastel theme for GitHub
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
@@ -748,6 +748,9 @@
   /* Button Fix */
   .color-bg-subtle {
       background-color: transparent !important;
+  }
+  .command-palette-details-dialog .color-bg-subtle {
+    background-color: $surface0 !important;
   }
   /* Button selection Fix */
   .navigation-item[aria-selected="true"] .color-fg-muted {
