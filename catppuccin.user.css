@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Github Catppuccin
 @namespace      github.com/catppuccin/github
-@version        1.1.6
+@version        1.1.7
 @description    Soothing pastel theme for GitHub
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
@@ -205,7 +205,7 @@
       --color-prettylights-syntax-markup-changed-bg: alpha($yellow, 0.4);
       --color-prettylights-syntax-markup-ignored-text: $text;
       --color-prettylights-syntax-markup-ignored-bg: #f0f;
-      --color-prettylights-syntax-meta-diff-range: #f0f;
+      --color-prettylights-syntax-meta-diff-range: $mauve;
       --color-prettylights-syntax-brackethighlighter-angle: #f0f;
       --color-prettylights-syntax-sublimelinter-gutter-mark: #f0f;
       --color-prettylights-syntax-constant-other-reference-link: #f0f;
