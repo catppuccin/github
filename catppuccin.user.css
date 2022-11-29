@@ -778,3 +778,9 @@
       background: $surface2 !important;
   }
 }
+
+/* New change visibility box danger buttons Fix */
+:where(#repo-visibility-proceed-button-public, #repo-visibility-proceed-button-private):not([data-next-stage]) {
+    color: var(--color-btn-danger-text);
+    background-color: var(--color-btn-danger-bg);
+}
