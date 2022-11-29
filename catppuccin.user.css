@@ -713,6 +713,12 @@
       background-color:  $green;
   }
 
+  /* Environments failure pill Fix */
+  .Label--danger {
+    border-color: var(--color-danger-emphasis);
+    color: var(--color-danger-fg);
+  }
+
   .timeline-comment-header .Label,
   .timeline-comment .Label {
       color: var(--color-fg-muted);
