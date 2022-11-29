@@ -700,7 +700,8 @@
 
   /* Labels */
   .Label {
-      color:  $base;
+      color:  var(--color-accent-fg);
+      background-color: $surface0;
       border-color: transparent;
   }
 
@@ -710,6 +711,7 @@
   }
 
   .Label--success {
+      color: $base;
       background-color:  $green;
   }
 
