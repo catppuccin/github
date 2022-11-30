@@ -798,3 +798,8 @@
     color: var(--color-btn-danger-text);
     background-color: var(--color-btn-danger-bg);
 }
+
+/* 2FA authentication box header Fix */
+body.session-authentication div.Box-header {
+    background-color: inherit;
+}
