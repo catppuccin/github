@@ -715,7 +715,6 @@
       background-color:  $green;
   }
 
-  /* Environments failure pill Fix */
   .Label--danger {
     background-color: var(--color-danger-emphasis);
     color: var(--color-btn-danger-text);
