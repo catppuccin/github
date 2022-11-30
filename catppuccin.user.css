@@ -717,8 +717,8 @@
 
   /* Environments failure pill Fix */
   .Label--danger {
-    border-color: var(--color-danger-emphasis);
-    color: var(--color-danger-fg);
+    background-color: var(--color-danger-emphasis);
+    color: var(--color-btn-danger-text);
   }
 
   .timeline-comment-header .Label,
