@@ -771,7 +771,7 @@
   if (usefont) {
       body,
       .markdown-body {
-          font-family: inter;
+          font-family: inter, sans-serif;
       }
   }
 
