@@ -700,7 +700,8 @@
 
   /* Labels */
   .Label {
-      color:  $base;
+      color:  var(--color-accent-fg);
+      background-color: $surface0;
       border-color: transparent;
   }
 
@@ -710,7 +711,13 @@
   }
 
   .Label--success {
+      color: $base;
       background-color:  $green;
+  }
+
+  .Label--danger {
+    background-color: var(--color-danger-emphasis);
+    color: var(--color-btn-danger-text);
   }
 
   .timeline-comment-header .Label,
@@ -771,4 +778,27 @@
   ::selection {
       background: $surface2 !important;
   }
+}
+
+/* New change visibility box star and watcher preview buttons Fix */
+.btn.color-fg-danger.cursor-default {
+    color: var(--color-btn-danger-text) !important;
+    background-color: var(--color-btn-danger-bg);
+}
+.btn.color-fg-danger.cursor-default:hover {
+    background-color: var(--color-btn-danger-hover-bg);
+}
+.btn.color-fg-danger.cursor-default > svg.octicon {
+    color: var(--color-btn-danger-text) !important;
+}
+
+/* New change visibility box danger buttons Fix */
+:where(#repo-visibility-proceed-button-public, #repo-visibility-proceed-button-private):not([data-next-stage]) {
+    color: var(--color-btn-danger-text);
+    background-color: var(--color-btn-danger-bg);
+}
+
+/* 2FA authentication box header Fix */
+body.session-authentication div.Box-header {
+    background-color: inherit;
 }
