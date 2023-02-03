@@ -801,4 +801,14 @@
   body.session-authentication div.Box-header {
       background-color: inherit;
   }
+
+  /* Footer Logo Fix */
+  .footer-octicon > svg:nth-child(1) > path:nth-child(1){
+      fill: $text;
+  }
+
+  /* Footer text hover fix */
+  nav.col-12 *{
+      color: $subtext1 !important;
+  }
 }
