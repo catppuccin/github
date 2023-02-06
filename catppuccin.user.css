@@ -7,8 +7,8 @@
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
 @preprocessor   stylus
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
+@var select accent-color "Accent" ["Rosewater*", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Blue", "Sapphire", "Sky", "Lavender", "Gray"]
 @var checkbox topbar "Topbar colors" 1
-@var checkbox blueaccent "Blue Accent" 0
 @var checkbox usefont "Use Inter font" 0
 ==/UserStyle== */
 @-moz-document regexp("https:\/\/(gist\.)*github\.com(?!\/(marketplace|organizations\/plan)).*") {
@@ -467,17 +467,10 @@
       --color-neutral-emphasis: $overlay2;
       --color-neutral-muted: rgba(110, 118, 129, 0.4);
       --color-neutral-subtle: rgba(110, 118, 129, 0.1);
-      if (blueaccent) {
-          --color-accent-fg:  $blue;
-          --color-accent-emphasis:  $blue;
-          --color-accent-muted: alpha($blue, 0.4);
-          --color-accent-subtle: alpha($blue, 0.15);
-      } else {
-          --color-accent-fg:  $rosewater;
-          --color-accent-emphasis:  $rosewater;
-          --color-accent-muted: alpha($rosewater, 0.4);
-          --color-accent-subtle: alpha($rosewater, 0.15);
-      }
+      --color-accent-fg:  $accent-color;
+      --color-accent-emphasis:  $accent-color;
+      --color-accent-muted: alpha($accent-color, 0.4);
+      --color-accent-subtle: alpha($accent-color, 0.15);
       --color-success-fg:  $green;
       --color-success-emphasis:  $green;
       --color-success-muted: rgba(46, 160, 67, 0.4);
@@ -510,11 +503,7 @@
       --color-sponsors-emphasis: $mauve;
       --color-sponsors-muted: rgba(219, 97, 162, 0.4);
       --color-sponsors-subtle: rgba(219, 97, 162, 0.15);
-      if (blueaccent) {
-        --color-primer-fg-disabled: alpha($blue, .5);
-      } else {
-        --color-primer-fg-disabled: alpha($rosewater, .5);
-      }
+      --color-primer-fg-disabled: alpha($accent-color, .5);
       --color-primer-canvas-backdrop: rgba(1, 4, 9, 0.8);
       --color-primer-canvas-sticky: rgba(13, 17, 23, 0.95);
       --color-primer-border-active:  $red;
