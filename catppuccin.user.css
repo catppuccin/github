@@ -136,7 +136,37 @@
       $crust = #11111b
       $shadow = #010409
   }
-
+    if (accent-color=="Rosewater") {
+            $accent-color = $rosewater;
+    } else if (accent-color=="Flamingo") {
+            $accent-color = $flamingo
+    } else if (accent-color=="Pink") {
+        $accent-color = $pink
+    } else if (accent-color=="Mauve") {
+            $accent-color = $mauve
+    } else if (accent-color=="Red") {
+        $accent-color = $red
+    } else if (accent-color=="Maroon") {
+        $accent-color = $maroon
+    } else if (accent-color=="Peach") {
+        $accent-color = $peach
+    } else if (accent-color=="Yellow") {
+        $accent-color = $yellow
+    } else if (accent-color=="Green") {
+        $accent-color = $green
+    } else if (accent-color=="Teal") {
+        $accent-color = $teal
+    } else if (accent-color=="Blue") {
+        $accent-color = $blue
+    } else if (accent-color=="Sapphire") {
+        $accent-color = $sapphire
+    } else if (accent-color=="Sky") {
+        $accent-color = $sky
+    } else if (accent-color=="Lavender") {
+        $accent-color = $lavender
+    }  else if (accent-color=="Gray") {
+        $accent-color = $subtext0
+    }
   /* Functions */
   hoverColor(col) {
       return blend(alpha(col, 0.7), $text)
