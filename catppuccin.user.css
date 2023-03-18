@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Github Catppuccin
 @namespace      github.com/catppuccin/github
-@version        1.1.8
+@version        1.1.9
 @description    Soothing pastel theme for GitHub
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
@@ -41,7 +41,7 @@
       $base = #eff1f5
       $mantle = #e6e9ef
       $crust = #dce0e8
-      $shadow = #dbdfef
+      $shadow = $crust
   }
   else if (theme=="Frappe") {
       $type = dark
@@ -72,7 +72,7 @@
       $base = #303446
       $mantle = #292c3c
       $crust = #232634
-      $shadow = #010409
+      $shadow = $crust
   }
   else if (theme=="Macchiato") {
       $type = dark
@@ -103,7 +103,7 @@
       $base = #24273a
       $mantle = #1e2030
       $crust = #181926
-      $shadow = #010409
+      $shadow = $crust
   }
   else if (theme=="Mocha") {
       $type = dark
@@ -134,7 +134,7 @@
       $base = #1e1e2e
       $mantle = #181825
       $crust = #11111b
-      $shadow = #010409
+      $shadow = $crust
   }
     if (accent-color=="Rosewater") {
             $accent-color = $rosewater;
