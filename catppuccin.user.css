@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Github Catppuccin
 @namespace      github.com/catppuccin/github
-@version        1.1.10
+@version        1.1.11
 @description    Soothing pastel theme for GitHub
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/github/raw/main/catppuccin.user.css
@@ -261,53 +261,53 @@
       --color-checks-bg: $mantle;
       --color-checks-run-border-width: 1px;
       --color-checks-container-border-width: 1px;
-      --color-checks-text-primary: #c9d1d9;
-      --color-checks-text-secondary: #8b949e;
-      --color-checks-text-link: #58a6ff;
-      --color-checks-btn-icon: #8b949e;
-      --color-checks-btn-hover-icon: #c9d1d9;
-      --color-checks-btn-hover-bg: rgba(110, 118, 129, 0.1);
-      --color-checks-input-text: #8b949e;
-      --color-checks-input-placeholder-text: #6e7681;
-      --color-checks-input-focus-text: #c9d1d9;
-      --color-checks-input-bg: #161b22;
+      --color-checks-text-primary: $text;
+      --color-checks-text-secondary: $subtext1;
+      --color-checks-text-link: $accent-color;
+      --color-checks-btn-icon: $text;
+      --color-checks-btn-hover-icon: $text;
+      --color-checks-btn-hover-bg: $crust;
+      --color-checks-input-text: $surface1;
+      --color-checks-input-placeholder-text: $subtext1;
+      --color-checks-input-focus-text: $text;
+      --color-checks-input-bg: $surface0;
       --color-checks-input-shadow: 0 0 0 1px;
       --color-checks-donut-error: $red;
       --color-checks-donut-pending: $peach;
       --color-checks-donut-success: $green;
       --color-checks-donut-neutral: $overlay2;
-      --color-checks-dropdown-text: #c9d1d9;
-      --color-checks-dropdown-bg: #161b22;
-      --color-checks-dropdown-border: #30363d;
-      --color-checks-dropdown-shadow: rgba(1, 4, 9, 0.3);
-      --color-checks-dropdown-hover-text: #c9d1d9;
-      --color-checks-dropdown-hover-bg: rgba(110, 118, 129, 0.1);
-      --color-checks-dropdown-btn-hover-text: #c9d1d9;
-      --color-checks-dropdown-btn-hover-bg: rgba(110, 118, 129, 0.1);
-      --color-checks-scrollbar-thumb-bg: rgba(110, 118, 129, 0.4);
-      --color-checks-header-label-text: #8b949e;
-      --color-checks-header-label-open-text: #c9d1d9;
-      --color-checks-header-border: #21262d;
-      --color-checks-header-icon: #8b949e;
-      --color-checks-line-text: #8b949e;
-      --color-checks-line-num-text: #6e7681;
-      --color-checks-line-timestamp-text: #6e7681;
-      --color-checks-line-hover-bg: rgba(110, 118, 129, 0.1);
-      --color-checks-line-selected-bg: rgba(56, 139, 253, 0.15);
-      --color-checks-line-selected-num-text: #58a6ff;
-      --color-checks-line-dt-fm-text: #ffffff;
-      --color-checks-line-dt-fm-bg: #9e6a03;
+      --color-checks-dropdown-text: $text;
+      --color-checks-dropdown-bg: $surface0;
+      --color-checks-dropdown-border: $surface1;
+      --color-checks-dropdown-shadow: $shadow;
+      --color-checks-dropdown-hover-text: $subtext0;
+      --color-checks-dropdown-hover-bg: $mantle;
+      --color-checks-dropdown-btn-hover-text: $text;
+      --color-checks-dropdown-btn-hover-bg: $mantle;
+      --color-checks-scrollbar-thumb-bg: $mantle;
+      --color-checks-header-label-text: $text;
+      --color-checks-header-label-open-text: $accent-color;
+      --color-checks-header-border: $surface0;
+      --color-checks-header-icon: $text;
+      --color-checks-line-text: $subtext1;
+      --color-checks-line-num-text: $subtext1;
+      --color-checks-line-timestamp-text: $subtext1;
+      --color-checks-line-hover-bg: $surface0;
+      --color-checks-line-selected-bg: #dc2286;
+      --color-checks-line-selected-num-text: #dc2286;
+      --color-checks-line-dt-fm-text: #dc2286;
+      --color-checks-line-dt-fm-bg: #dc2286;
       --color-checks-gate-bg: rgba(187, 128, 9, 0.15);
-      --color-checks-gate-text: #8b949e;
-      --color-checks-gate-waiting-text: #d29922;
+      --color-checks-gate-text: $text;
+      --color-checks-gate-waiting-text: $yellow;
       --color-checks-step-header-open-bg: $surface0;
       --color-checks-step-error-text: $maroon;
       --color-checks-step-warning-text: $peach;
-      --color-checks-logline-text: #8b949e;
-      --color-checks-logline-num-text: #6e7681;
+      --color-checks-logline-text: $text;
+      --color-checks-logline-num-text: $text;
       --color-checks-logline-debug-text: $mauve;
-      --color-checks-logline-error-text: #8b949e;
-      --color-checks-logline-error-num-text: #6e7681;
+      --color-checks-logline-error-text: $text;
+      --color-checks-logline-error-num-text: $maroon;
       --color-checks-logline-error-bg: alpha($maroon, 0.15);
       --color-checks-logline-warning-text: $subtext1;
       --color-checks-logline-warning-num-text: $peach;
@@ -461,7 +461,7 @@
       --color-btn-danger-icon: #f85149;
       --color-underlinenav-icon: #6e7681;
       --color-underlinenav-border-hover: rgba(110, 118, 129, 0.4);
-      --color-action-list-item-inline-divider: rgba(48, 54, 61, 0.48);
+      --color-action-list-item-inline-divider: $surface2;
       --color-action-list-item-default-hover-bg:  $surface0;
       --color-action-list-item-default-hover-border: rgba(0, 0, 0, 0);
       --color-action-list-item-default-active-bg: rgba(177, 186, 196, 0.2);
@@ -642,17 +642,17 @@
   [data-color-mode="dark"][data-dark-theme*="light"],
   [data-color-mode="auto"][data-dark-theme*="dark"],
   [data-color-mode="auto"][data-dark-theme*="light"] {
-      --color-workflow-card-connector: var(--color-scale-gray-5);
-      --color-workflow-card-connector-bg: var(--color-scale-gray-5);
-      --color-workflow-card-connector-inactive: var(--color-border-default);
-      --color-workflow-card-connector-inactive-bg: var(--color-border-default);
-      --color-workflow-card-connector-highlight: var(--color-scale-blue-5);
-      --color-workflow-card-connector-highlight-bg: var(--color-scale-blue-5);
-      --color-workflow-card-bg: var(--color-scale-gray-7);
-      --color-workflow-card-inactive-bg: var(--color-canvas-inset);
-      --color-workflow-card-header-shadow: rgba(27, 31, 35, 0.04);
-      --color-workflow-card-progress-complete-bg: var(--color-scale-blue-5);
-      --color-workflow-card-progress-incomplete-bg: var(--color-scale-gray-6);
+      --color-workflow-card-connector: $overlay0;
+      --color-workflow-card-connector-bg: $overlay0;
+      --color-workflow-card-connector-inactive: $surface1;
+      --color-workflow-card-connector-inactive-bg: $surface1;
+      --color-workflow-card-connector-highlight: $accent-color;
+      --color-workflow-card-connector-highlight-bg: $accent-color;
+      --color-workflow-card-bg: $surface1;
+      --color-workflow-card-inactive-bg: $surface0;
+      --color-workflow-card-header-shadow: #dc2286;
+      --color-workflow-card-progress-complete-bg: alpha($blue, 0.15);
+      --color-workflow-card-progress-incomplete-bg: $surface1;
       --color-discussions-state-answered-icon: var(--color-scale-green-3);
       --color-bg-discussions-row-emoji-box: var(--color-scale-gray-6);
       --color-notifications-button-text: var(--color-scale-white);
@@ -793,6 +793,10 @@
       .markdown-body {
           font-family: inter, sans-serif;
       }
+  }
+
+  #check-step-header-title {
+      color: var(--color-checks-text-link) !important;
   }
 
   ::selection {
