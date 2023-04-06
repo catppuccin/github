@@ -8,7 +8,7 @@
 @preprocessor   stylus
 @var select theme "Theme" ["Latte", "Frappe", "Macchiato", "Mocha*"]
 ==/UserStyle== */
-@-moz-document domain("notebooks.githubusercontent.com") {
+@-moz-document regexp("https:\/\/notebooks\.githubusercontent\.com\/view\/ipynb.*") {
     if (theme=="Latte") {
         $type=light;
         $rosewater=#dc8a78;
