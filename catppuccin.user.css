@@ -320,9 +320,9 @@
       --color-overlay-shadow: 0 0 0 1px @crust, 0 16px 32px @shadow;
 
       --color-neutral-emphasis-plus: @subtext0;
-      --color-neutral-emphasis: @overlay2;
-      --color-neutral-muted: fade(@overlay2, 40);
-      --color-neutral-subtle: fade(@overlay2, 10);
+      --color-neutral-emphasis: @overlay0;
+      --color-neutral-muted: fade(@overlay0, 40);
+      --color-neutral-subtle: fade(@overlay0, 10);
 
       --color-accent-fg: @accent;
       --color-accent-emphasis: @accent;
