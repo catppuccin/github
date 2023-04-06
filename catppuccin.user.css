@@ -309,6 +309,10 @@
       --color-canvas-inset: @surface0;
       --color-canvas-subtle: @mantle;
 
+      --color-segmented-control-bg: @surface0;
+      --color-segmented-control-button-bg: @surface1;
+      --color-segmented-control-button-selected-border: fade(@overlay0, 0);
+
       --color-border-default: @surface1;
       --color-border-muted: @surface0;
       --color-border-subtle: fade(@text, 10);
