@@ -785,6 +785,10 @@
   .navigation-item[aria-selected="true"] .color-fg-muted {
       color: $base !important;
   }
+  /* Darker bg for new AppHeader */
+  .AppHeader {
+      background: var(--color-header-bg);
+  }
   /* Headers */
   h1, h2, h3, h4, h5, h6 {
       color: $subtext1
