@@ -832,9 +832,21 @@
       background-color: inherit;
   }
 
+
+  /* Footer Logo Fix */
+  .footer-octicon > svg:nth-child(1) > path:nth-child(1){
+    fill: $text;
+  }
+
+  /* Footer text hover fix */
+  nav.col-12 *{
+    color: $subtext1 !important;
+
+
   /* Notifications */
   .notification-indicator .mail-status {
-      background-image: none;
-      background-color: $accent-color
+    background-image: none;
+    background-color: $accent-color;
   }
+
 }
