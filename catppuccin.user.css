@@ -494,7 +494,7 @@
           --color-shadow-medium: 0 3px 6px $shadow;
           --color-shadow-large: 0 8px 24px $shadow;
           --color-shadow-extra-large: 0 12px 48px $shadow;
-          --color-neutral-emphasis-plus: #6e7681;
+          --color-neutral-emphasis-plus: $overlay0;
           --color-neutral-emphasis: $overlay2;
           --color-neutral-muted: rgba(110, 118, 129, 0.4);
           --color-neutral-subtle: rgba(110, 118, 129, 0.1);
@@ -830,5 +830,11 @@
   /* 2FA authentication box header Fix */
   body.session-authentication div.Box-header {
       background-color: inherit;
+  }
+
+  /* Notifications */
+  .notification-indicator .mail-status {
+      background-image: none;
+      background-color: $accent-color
   }
 }
