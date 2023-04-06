@@ -209,7 +209,12 @@
         --color-header-bg: @base;
       }
       & when (@accentedTopbar = 1) {
-        --color-header-bg: @mantle;
+        & when not (@lookup = latte) {
+          --color-header-bg: @mantle;
+        }
+        & when (@lookup = latte) {
+          --color-header-bg: @crust;
+        }
       }
       --color-header-divider: @crust;
       --color-header-logo: @text;
@@ -312,6 +317,7 @@
       --color-shadow-medium: 0 3px 6px @shadow;
       --color-shadow-large: 0 8px 24px @shadow;
       --color-shadow-extra-large: 0 12px 48px @shadow;
+      --color-overlay-shadow: 0 0 0 1px @crust, 0 16px 32px @shadow;
 
       --color-neutral-emphasis-plus: @subtext0;
       --color-neutral-emphasis: @overlay2;
@@ -442,6 +448,8 @@
     ::selection { background: fade(@surface2, 50) !important; }
 
     .Header when (@accentedTopbar = 0) { border-bottom: 1px solid var(--color-border-muted); }
+
+    .AppHeader { --AppHeader-bg: var(--color-header-bg); }
 
     .col-md-8 { background-color: @base; }
 
