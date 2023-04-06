@@ -841,7 +841,7 @@
   /* Footer text hover fix */
   nav.col-12 *{
     color: $subtext1 !important;
-
+  }
 
   /* Notifications */
   .notification-indicator .mail-status {
