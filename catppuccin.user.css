@@ -286,8 +286,8 @@
       --color-btn-danger-selected-bg: softlight(@red, @text);
       --color-btn-danger-selected-border: fade(@red, 0);
       --color-btn-danger-selected-shadow: 0 0 fade(@shadow, 0);
-      --color-btn-danger-disabled-text: @overlay0;
-      --color-btn-danger-disabled-bg: hardlight(@red, @base);
+      --color-btn-danger-disabled-text: @red;
+      --color-btn-danger-disabled-bg: fade(hardlight(@red, @base), 50);
       --color-btn-danger-disabled-counter-bg: lighten(hardlight(@red, @base), 10);
       --color-btn-danger-focus-border: @red;
       --color-btn-danger-focus-shadow: 0 0 0 3px fade(@shadow, 0);
@@ -454,9 +454,9 @@
 
     /* Buttons */
 
-    .btn-danger,
-    .Button--danger {
-      background: var(--color-btn-danger-bg);
+    .btn-danger:not([disabled]),
+    .Button--danger:not([disabled]) {
+      background-color: var(--color-btn-danger-bg);
       &:hover {
         background: var(--color-btn-danger-hover-bg);
       }
