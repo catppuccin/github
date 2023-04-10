@@ -60,7 +60,7 @@
       --color-diff-blob-deletion-line-bg: fade(@red, 15);
       --color-diff-blob-deletion-word-bg: fade(@red, 30);
       --color-diff-blob-hunk-num-bg: fade(@blue, 40);
-      --color-diff-blob-expander-icon: #f0f;
+      --color-diff-blob-expander-icon: @accent;
       --color-diff-blob-selected-line-highlight-mix-blend-mode: screen;
       --color-diffstat-deletion-border: fade(@text, 10);
       --color-diffstat-addition-border: fade(@text, 10);
@@ -454,6 +454,15 @@
     .Header when (@accentedTopbar = 0) { border-bottom: 1px solid var(--color-border-muted); }
 
     .AppHeader { --AppHeader-bg: var(--color-header-bg); }
+
+    .AppHeader .AppHeader-globalBar .AppHeader-search .AppHeader-searchButton,
+    .AppHeader .AppHeader-button {
+      color: var(--color-btn-text);
+      background-color: var(--color-btn-bg);
+      border-color: var(--color-btn-border);
+      &:not(.AppHeader-searchButton):hover { background-color: var(--color-btn-hover-bg); }
+    }
+
 
     .col-md-8 { background-color: @base; }
 
