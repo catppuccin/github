@@ -15,35 +15,35 @@
 @-moz-document regexp("https:\/\/*github\.com") {
 
   if (theme=="Latte") {
-    $type = light
+      $type = light
 
-    $rosewater = #dc8a78
-    $flamingo = #dd7878
-    $pink = #ea76cb
-    $mauve = #8839ef
-    $red = #d20f39
-    $maroon = #e64553
-    $peach = #fe640b
-    $yellow = #df8e1d
-    $green = #40a02b
-    $teal = #179299
-    $sky = #04a5e5
-    $sapphire = #209fb5
-    $blue = #1e66f5
-    $lavender = #7287fd
-    $text = #4c4f69
-    $subtext1 = #5c5f77
-    $subtext0 = #6c6f85
-    $overlay2 = #7c7f93
-    $overlay1 = #8c8fa1
-    $overlay0 = #9ca0b0
-    $surface2 = #acb0be
-    $surface1 = #bcc0cc
-    $surface0 = #ccd0da
-    $base = #eff1f5
-    $mantle = #e6e9ef
-    $crust = #dce0e8
-    $shadow = $crust
+      $rosewater = #dc8a78
+      $flamingo = #dd7878
+      $pink = #ea76cb
+      $mauve = #8839ef
+      $red = #d20f39
+      $maroon = #e64553
+      $peach = #fe640b
+      $yellow = #df8e1d
+      $green = #40a02b
+      $teal = #179299
+      $sky = #04a5e5
+      $sapphire = #209fb5
+      $blue = #1e66f5
+      $lavender = #7287fd
+      $text = #4c4f69
+      $subtext1 = #5c5f77
+      $subtext0 = #6c6f85
+      $overlay2 = #7c7f93
+      $overlay1 = #8c8fa1
+      $overlay0 = #9ca0b0
+      $surface2 = #acb0be
+      $surface1 = #bcc0cc
+      $surface0 = #ccd0da
+      $base = #eff1f5
+      $mantle = #e6e9ef
+      $crust = #dce0e8
+      $shadow = $crust
   }
   else if (theme=="Frappe") {
       $type = dark
@@ -139,37 +139,37 @@
       $shadow = $crust
   }
 
-  if (accent-color=="Rosewater") {
-          $accent-color = $rosewater;
-  } else if (accent-color=="Flamingo") {
-          $accent-color = $flamingo
-  } else if (accent-color=="Pink") {
-      $accent-color = $pink
-  } else if (accent-color=="Mauve") {
-          $accent-color = $mauve
-  } else if (accent-color=="Red") {
-      $accent-color = $red
-  } else if (accent-color=="Maroon") {
-      $accent-color = $maroon
-  } else if (accent-color=="Peach") {
-      $accent-color = $peach
-  } else if (accent-color=="Yellow") {
-      $accent-color = $yellow
-  } else if (accent-color=="Green") {
-      $accent-color = $green
-  } else if (accent-color=="Teal") {
-      $accent-color = $teal
-  } else if (accent-color=="Blue") {
-      $accent-color = $blue
-  } else if (accent-color=="Sapphire") {
-      $accent-color = $sapphire
-  } else if (accent-color=="Sky") {
-      $accent-color = $sky
-  } else if (accent-color=="Lavender") {
-      $accent-color = $lavender
-  }  else if (accent-color=="Gray") {
-      $accent-color = $subtext0
-  }
+    if (accent-color=="Rosewater") {
+            $accent-color = $rosewater;
+    } else if (accent-color=="Flamingo") {
+            $accent-color = $flamingo
+    } else if (accent-color=="Pink") {
+        $accent-color = $pink
+    } else if (accent-color=="Mauve") {
+            $accent-color = $mauve
+    } else if (accent-color=="Red") {
+        $accent-color = $red
+    } else if (accent-color=="Maroon") {
+        $accent-color = $maroon
+    } else if (accent-color=="Peach") {
+        $accent-color = $peach
+    } else if (accent-color=="Yellow") {
+        $accent-color = $yellow
+    } else if (accent-color=="Green") {
+        $accent-color = $green
+    } else if (accent-color=="Teal") {
+        $accent-color = $teal
+    } else if (accent-color=="Blue") {
+        $accent-color = $blue
+    } else if (accent-color=="Sapphire") {
+        $accent-color = $sapphire
+    } else if (accent-color=="Sky") {
+        $accent-color = $sky
+    } else if (accent-color=="Lavender") {
+        $accent-color = $lavender
+    }  else if (accent-color=="Gray") {
+        $accent-color = $subtext0
+    }
 
   /* Functions */
   hoverColor(col) {
