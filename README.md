@@ -22,13 +22,11 @@
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
 2. Enable CSP Patching from Stylus Settings > Advanced.
 3. [Click here to install.](https://github.com/catppuccin/github/raw/main/catppuccin.user.css)
-4. [Click here to install additional styles for ipynb files](https://github.com/catppuccin/github/raw/main/ipynb.catppuccin.user.css)
 
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
 2. Create a new custom Style that applies to `github.com`.
 3. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to created Style.
-4. For ipynb support, repeat steps 2 and 3 but apply [this style](ipynb.catppuccin.user.css) to `notebooks.githubusercontent.com`
 
 ## 💝 Thanks to
 
