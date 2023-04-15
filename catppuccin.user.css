@@ -849,7 +849,7 @@
 
   /* Footer text hover fix */
   nav.col-12 *{
-    color: $subtext1 !important;
+    color: (null) !important;
   }
 
   /* Notifications */
