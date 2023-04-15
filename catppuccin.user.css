@@ -848,8 +848,8 @@
   }
 
   /* Footer text hover fix */
-  nav.col-12 *{
-    color: (null) !important;
+  .footer nav.col-12 * {
+    color: $subtext1 !important;
   }
 
   /* Notifications */
