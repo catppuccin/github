@@ -776,6 +776,12 @@
   .col-md-8 {
     background-color: $base;
   }
+  .kSmUFR[data-size="small"][data-no-visuals="true"] svg, svg.octicon.octicon-check {
+      color: $accent-color
+  }
+  .starred .starred-button-icon {
+      color: $yellow
+  }
 
   /* Large notification */
   .flash {
