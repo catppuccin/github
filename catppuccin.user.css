@@ -777,7 +777,7 @@
     background-color: $base;
   }
   .kSmUFR[data-size="small"][data-no-visuals="true"] svg {
-      color: $accent-color
+      color: $green
   }
   .starred .starred-button-icon {
       color: $yellow
