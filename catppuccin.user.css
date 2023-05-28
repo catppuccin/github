@@ -11,10 +11,34 @@
 @var checkbox topbar "Topbar colors" 1
 @var checkbox usefont "Use Inter font" 0
 ==/UserStyle== */
-
+// Define Functions
+// Include https://github.com
+// Include https://gist.github.com
+// Exclude /marketplace
+// Exclude /organizations/plan
 @-moz-document regexp("https:\/\/(gist\.)*github\.com(?!\/(marketplace|organizations\/plan)).*") {
   .catppuccin(@theme);
   @accent-color: @@accent;
+
+  .coloredButton(@name, @color) {
+    --color-btn-@{name}-text: @base;
+    --color-btn-@{name}-bg: @color;
+    --color-btn-@{name}-border: transparent;
+    --color-btn-@{name}-shadow: 0 0 transparent;
+    --color-btn-@{name}-inset-shadow: 0 0 transparent;
+    --color-btn-@{name}-hover-bg: mix(@color, @text, 30%);
+    --color-btn-@{name}-hover-border: rgba(240, 246, 252, 0.1);
+    --color-btn-@{name}-selected-bg: mix(@color, @text, 50%);
+    --color-btn-@{name}-selected-shadow: 0 0 transparent;
+    --color-btn-@{name}-disabled-text: @crust;
+    --color-btn-@{name}-disabled-bg: mix(@color, @base, 60%);
+    --color-btn-@{name}-disabled-border: transparent;
+    --color-btn-@{name}-focus-bg: #238636;
+    --color-btn-@{name}-focus-border: rgba(240, 246, 252, 0.1);
+    --color-btn-@{name}-focus-shadow: 0 0 0 3px rgba(46, 164, 79, 0.4);
+    --color-btn-@{name}-icon: @base;
+    --color-btn-@{name}-counter-bg: rgba(255, 255, 255, 0.2);
+  }
 
   [data-color-mode="light"][data-light-theme*="dark"],
   [data-color-mode="light"][data-light-theme*="light"],
@@ -157,6 +181,7 @@
       --color-checks-ansi-white-bright: @subtext0;
 
       & when (@theme =latte) {
+        // When using a light theme use the light colors instead of the dark
         --color-checks-ansi-black: @subtext1;
         --color-checks-ansi-black-bright: @subtext0;
         --color-checks-ansi-white: @surface2;
@@ -207,6 +232,7 @@
       --color-header-bg: @base;
 
       & when (@topbar =1) {
+        // If topbar is enabled then make the topbar color different
         --color-header-bg: @mantle;
       }
 
@@ -251,23 +277,7 @@
       --color-btn-shadow-active: inset 0 0.15em 0.3em rgba(1, 4, 9, 0.15);
       --color-btn-shadow-input-focus: 0 0 0 0.2em rgba(31, 111, 235, 0.3);
       --color-btn-counter-bg: @surface2;
-      --color-btn-primary-text: @base;
-      --color-btn-primary-bg: @green;
-      --color-btn-primary-border: transparent;
-      --color-btn-primary-shadow: 0 0 transparent;
-      --color-btn-primary-inset-shadow: 0 0 transparent;
-      --color-btn-primary-hover-bg: hoverColor(@green);
-      --color-btn-primary-hover-border: rgba(240, 246, 252, 0.1);
-      --color-btn-primary-selected-bg: activeColor(@green);
-      --color-btn-primary-selected-shadow: 0 0 transparent;
-      --color-btn-primary-disabled-text: @crust;
-      --color-btn-primary-disabled-bg: disabledColor(@green);
-      --color-btn-primary-disabled-border: transparent;
-      --color-btn-primary-focus-bg: #238636;
-      --color-btn-primary-focus-border: rgba(240, 246, 252, 0.1);
-      --color-btn-primary-focus-shadow: 0 0 0 3px rgba(46, 164, 79, 0.4);
-      --color-btn-primary-icon: @base;
-      --color-btn-primary-counter-bg: rgba(255, 255, 255, 0.2);
+      .coloredButton(primary, @green);
       --color-btn-outline-text: #58a6ff;
       --color-btn-outline-hover-text: #58a6ff;
       --color-btn-outline-hover-bg: #30363d;
@@ -285,26 +295,7 @@
       --color-btn-outline-focus-border: rgba(240, 246, 252, 0.1);
       --color-btn-outline-focus-shadow: 0 0 0 3px rgba(17, 88, 199, 0.4);
       --color-btn-outline-counter-bg: rgba(31, 111, 235, 0.1);
-      --color-btn-danger-text: @base;
-      --color-btn-danger-bg: @red;
-      --color-btn-danger-hover-text: @base;
-      --color-btn-danger-hover-bg: hoverColor(@red);
-      --color-btn-danger-hover-border: transparent;
-      --color-btn-danger-hover-shadow: 0 0 transparent;
-      --color-btn-danger-hover-inset-shadow: 0 0 transparent;
-      --color-btn-danger-hover-icon: @base;
-      --color-btn-danger-hover-counter-bg: rgba(255, 255, 255, 0.2);
-      --color-btn-danger-selected-text: @base;
-      --color-btn-danger-selected-bg: activeColor(@red);
-      --color-btn-danger-selected-border: transparent;
-      --color-btn-danger-selected-shadow: 0 0 transparent;
-      --color-btn-danger-disabled-text: @crust;
-      --color-btn-danger-disabled-bg: disabledColor(@red);
-      --color-btn-danger-disabled-counter-bg: rgba(218, 54, 51, 0.05);
-      --color-btn-danger-focus-border: #f85149;
-      --color-btn-danger-focus-shadow: 0 0 0 3px rgba(248, 81, 73, 0.4);
-      --color-btn-danger-counter-bg: rgba(218, 54, 51, 0.1);
-      --color-btn-danger-icon: #f85149;
+      .coloredButton(danger, @red);
       --color-underlinenav-icon: #6e7681;
       --color-underlinenav-border-hover: rgba(110, 118, 129, 0.4);
       --color-action-list-item-inline-divider: @surface2;
@@ -543,8 +534,7 @@
   .hx_IssueLabel not when (@theme =latte) {
     --lightness-threshold: 0.453;
     --border-threshold: 0.96;
-    --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1));
-    //color: hsl(0deg, 0%, calc(var(--lightness-switch) * 100%)) !important;
+    --border-alpha: max(0, min(calc((var(--perceived-lightness) - var(--border-threshold)) * 100), 1)); //color: hsl(0deg, 0%, calc(var(--lightness-switch) * 100%)) !important;
     color: var(--text) !important;
     background: rgb(var(--label-r), var(--label-g), var(--label-b)) !important;
     border-color: hsla(var(--label-h), calc(var(--label-s) * 1%), calc((var(--label-l) - 25) * 1%), var(--border-alpha)) !important;
@@ -702,7 +692,7 @@
   }
 
   @-moz-document regexp("https:\/\/notebooks\.githubusercontent\.com\/view\/ipynb.*") {
-    .catppuccin();
+    .catppuccin(@theme);
 
     :root {
       /* Colors */
