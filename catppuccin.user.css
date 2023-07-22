@@ -699,6 +699,10 @@
     background: var(--color-btn-danger-bg)
   }
 
+  .header-search-button.placeholder {
+      color: $text
+  }
+
   /* Issue tags */
   .hx_IssueLabel {
     --text: $text;
